@@ -1,0 +1,94 @@
+
+<app-header-main></app-header-main>
+
+ <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel" style="margin-top: -9px;">
+ 
+   <ol class="carousel-indicators">
+     <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+     <li data-target="#carousel-example-2" data-slide-to="1"></li>
+     <li data-target="#carousel-example-2" data-slide-to="2"></li>
+   </ol>
+  
+   <div class="carousel-inner" role="listbox">
+     <div class="carousel-item active">
+       <div class="view">
+        <a routerLink="/offer">
+         <img class="d-block w-100" src="assets/images/merchantimages/slider2.png"
+           alt="First slide">
+         <div class="mask rgba-black-strong">
+            <button type="button" class="btn btn-light btn-lg left2">Shop Deals</button>
+            <button type="button" class="btn btn-light btn-lg right2">USE CODE</button>
+         </div>
+        </a>
+       </div>
+     </div>
+     <div class="carousel-item">
+      <div class="view">
+        <a routerLink="/offer">
+         <img class="d-block w-100" src="assets/images/merchantimages/slider1.png"
+           alt="Second slide">
+         <div class="mask rgba-black-strong">
+             <button type="button" class="btn btn-light btn-lg left2">Shop Deals</button>
+             <button type="button" class="btn btn-light btn-lg right2">USE CODE</button>
+           </div>
+          </a>
+       </div>
+     </div>
+     <div class="carousel-item">
+       <div class="view">
+        <a routerLink="/offer">
+         <img class="d-block w-100" src="assets/images/merchantimages/slider2.png"
+           alt="Third slide">
+         <div class="mask rgba-black-strong">
+           <button type="button" class="btn btn-light btn-lg left2">Shop Deals</button>
+           <button type="button" class="btn btn-light btn-lg right2">USE CODE</button>
+         </div>
+         </a>
+       </div>
+     </div>
+   </div>
+ 
+   <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+     <span class="sr-only">Previous</span>
+   </a>
+   <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+     <span class="sr-only">Next</span>
+   </a>
+   
+ </div>
+
+ <app-user-expansion></app-user-expansion>
+ <app-user-offer></app-user-offer>
+ <div class="subscription_plan " id="sub" style="background-color:whitesmoke">
+  <div class="container">
+      <h2 class="text-center text-dark p-2 mt-4">Choose The Plan</h2>
+      <h3 class="text-center">Upgrade At Anytime</h3>
+      <div class="col-md-12 text-center">
+          <owl-carousel [options]="pricingCarousel" [items]="price"
+              [carouselClasses]="['plan-slider owl-carousel owl-theme']">
+              <div class="item" *ngFor="let prices of price">
+                  <div class="package-box">
+                      <h3 style="border-bottom: 1px solid gray;">{{prices.type}}</h3>
+                      <h3 class="text-center mb-3"><i class="fa fa-inr mr-2"></i>{{prices.price}}</h3>
+                      <div class="price-plan text-center">
+                          <ul [innerHTML]="prices.feature"></ul>
+                          <a routerLink="/payment">
+                              <div class="price-plan-btn rounded-pill px-5 ">Choose</div>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </owl-carousel>
+      </div>
+  </div>
+</div>
+<app-user-contact-us></app-user-contact-us>
+<app-user-footer></app-user-footer>
+ <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+     <script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+
+ 
+ 
+ 

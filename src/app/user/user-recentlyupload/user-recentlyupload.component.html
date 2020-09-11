@@ -1,0 +1,190 @@
+
+
+    <app-header-main></app-header-main>
+    <div fxFlex='row' fxLayout='row wrap' fxLayoutAlign='space-evenly start' class= 'mt-5'>
+        <div fxFlex='30'>
+            <mat-card *ngFor='let card of cards'>
+                <mat-card-title>{{card.title}}</mat-card-title>
+                <mat-card-subtitle>{{card.sub}}</mat-card-subtitle>
+                <mat-card-content style="border: 2px dashed orange;">
+                    <input matInput type="text" value="{{card.code}}" #userinput style="border: none;">
+                    <button mat-raised-button (click)="copyInputMessage(userinput)"
+                        style="background-color: orange;">Copy</button>
+                </mat-card-content>
+                <button mat-mini-fab class="p-0">
+                    <a href="user/coupons">
+                        <mat-icon aria-hidden="false" aria-label="Example home icon" style="color: black;">
+                          keyboard_arrow_right
+                        </mat-icon>
+                      </a>
+                </button>
+                <mat-card-actions>
+                    Valid till {{card.date}}
+                </mat-card-actions>
+            </mat-card>
+            <mat-card *ngFor='let card of cards'>
+                <mat-card-title>{{card.title}}</mat-card-title>
+                <mat-card-subtitle>{{card.sub}}</mat-card-subtitle>
+                <mat-card-content style="border: 2px dashed orange;">
+                    <input matInput type="text" value="{{card.code}}" #userinput style="border: none;">
+                    <button mat-raised-button (click)="copyInputMessage(userinput)"
+                        style="background-color: orange;">Copy</button>
+                </mat-card-content>
+                <button mat-mini-fab class="p-0">
+                    <a href="user/coupons">
+                        <mat-icon aria-hidden="false" aria-label="Example home icon" style="color: black;">
+                          keyboard_arrow_right
+                        </mat-icon>
+                      </a>
+                </button>
+                <mat-card-actions>
+                    Valid till {{card.date}}
+                </mat-card-actions>
+            </mat-card>
+            <mat-card *ngFor='let card of cards'>
+                <mat-card-title>{{card.title}}</mat-card-title>
+                <mat-card-subtitle>{{card.sub}}</mat-card-subtitle>
+                <mat-card-content style="border: 2px dashed orange;">
+                    <input matInput type="text" value="{{card.code}}" #userinput style="border: none;">
+                    <button mat-raised-button (click)="copyInputMessage(userinput)"
+                        style="background-color: orange;">Copy</button>
+                </mat-card-content>
+                <button mat-mini-fab class="p-0">
+                    <a href="user/coupons">
+                        <mat-icon aria-hidden="false" aria-label="Example home icon" style="color: black;">
+                          keyboard_arrow_right
+                        </mat-icon>
+                      </a>
+                </button>
+                <mat-card-actions>
+                    Valid till {{card.date}}
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div fxFlex='10'>
+        </div>
+        <div fxFlex='60'>
+            <mat-card fxFlex='row' fxLayout='row wrap'>
+                <mat-card-title fxFlex='row' fxLayout='row wrap'>Recently Uploaded</mat-card-title> <br>
+                <div fxFlex= '100' fxLayout='row wrap' fxLayoutAlign='space-evenly center' class="mt-5">
+                    <a href="/user/videos">
+                    <mat-card class="example-small-box"> 
+                         <p>A2B Resturant BTM,Banglore</p>
+                         <mat-card-content >
+                            <video  autoplay loop controls     class="example-extra-box">
+                                <source [src]="user_video" type="video/mp4" /></video>
+                         </mat-card-content>
+                       </mat-card>
+                    </a>
+                    <a href="/user/videos">
+                        <mat-card class="example-small-box"> 
+                             <p>A2B Resturant BTM,Banglore</p>
+                             <mat-card-content >
+                                <video  autoplay loop controls     class="example-extra-box">
+                                    <source [src]="user_video" type="video/mp4" /></video>
+                             </mat-card-content>
+                           </mat-card>
+                        </a>
+                        <a href="/user/videos">
+                            <mat-card class="example-small-box"> 
+                                 <p>A2B Resturant BTM,Banglore</p>
+                                 <mat-card-content >
+                                    <video  autoplay loop controls     class="example-extra-box">
+                                        <source [src]="user_video" type="video/mp4" /></video>
+                                 </mat-card-content>
+                               </mat-card>
+                            </a>
+                  </div>
+                <mat-card-title fxFlex='row' fxLayout='row wrap' class="mt-5">Videos</mat-card-title> <br>
+                <div fxFlex= '100' fxLayout='row wrap' fxLayoutGap='20px' fxLayoutAlign='space-evenly center' class="mt-5">
+                    <a href="/user/videos">
+                        <mat-card class="example-small-box"> 
+                             <p>A2B Resturant BTM,Banglore</p>
+                             <mat-card-content >
+                                <video  autoplay loop controls     class="example-extra-box">
+                                    <source [src]="user_video" type="video/mp4" /></video>
+                             </mat-card-content>
+                           </mat-card>
+                        </a>
+                        <a href="/user/videos">
+                            <mat-card class="example-small-box"> 
+                                 <p>A2B Resturant BTM,Banglore</p>
+                                 <mat-card-content >
+                                    <video  autoplay loop controls     class="example-extra-box">
+                                        <source [src]="user_video" type="video/mp4" /></video>
+                                 </mat-card-content>
+                               </mat-card>
+                            </a>
+                            <a href="/user/videos">
+                                <mat-card class="example-small-box"> 
+                                     <p>A2B Resturant BTM,Banglore</p>
+                                     <mat-card-content >
+                                        <video  autoplay loop controls     class="example-extra-box">
+                                            <source [src]="user_video" type="video/mp4" /></video>
+                                     </mat-card-content>
+                                   </mat-card>
+                                </a>
+                  </div>
+                  <div fxFlex= '100' fxLayout='row wrap' fxLayoutGap='20px' fxLayoutAlign='space-evenly center' class="mt-5">
+                    <a href="/user/videos">
+                        <mat-card class="example-small-box"> 
+                             <p>A2B Resturant BTM,Banglore</p>
+                             <mat-card-content >
+                                <video  autoplay loop controls     class="example-extra-box">
+                                    <source [src]="user_video" type="video/mp4" /></video>
+                             </mat-card-content>
+                           </mat-card>
+                        </a>
+                        <a href="/user/videos">
+                            <mat-card class="example-small-box"> 
+                                 <p>A2B Resturant BTM,Banglore</p>
+                                 <mat-card-content >
+                                    <video  autoplay loop controls     class="example-extra-box">
+                                        <source [src]="user_video" type="video/mp4" /></video>
+                                 </mat-card-content>
+                               </mat-card>
+                            </a>
+                            <a href="/user/videos">
+                                <mat-card class="example-small-box"> 
+                                     <p>A2B Resturant BTM,Banglore</p>
+                                     <mat-card-content >
+                                        <video  autoplay loop controls     class="example-extra-box">
+                                            <source [src]="user_video" type="video/mp4" /></video>
+                                     </mat-card-content>
+                                   </mat-card>
+                                </a>
+                  </div>
+                  <div fxFlex= '100' fxLayout='row wrap' fxLayoutGap='20px' fxLayoutAlign='space-evenly center' class="mt-5">
+                    <a href="/user/videos">
+                        <mat-card class="example-small-box"> 
+                             <p>A2B Resturant BTM,Banglore</p>
+                             <mat-card-content >
+                                <video  autoplay loop controls     class="example-extra-box">
+                                    <source [src]="user_video" type="video/mp4" /></video>
+                             </mat-card-content>
+                           </mat-card>
+                        </a>
+                        <a href="/user/videos">
+                            <mat-card class="example-small-box"> 
+                                 <p>A2B Resturant BTM,Banglore</p>
+                                 <mat-card-content >
+                                    <video  autoplay loop controls     class="example-extra-box">
+                                        <source [src]="user_video" type="video/mp4" /></video>
+                                 </mat-card-content>
+                               </mat-card>
+                            </a>
+                            <a href="/user/videos">
+                                <mat-card class="example-small-box"> 
+                                     <p>A2B Resturant BTM,Banglore</p>
+                                     <mat-card-content >
+                                        <video  autoplay loop controls     class="example-extra-box">
+                                            <source [src]="user_video" type="video/mp4" /></video>
+                                     </mat-card-content>
+                                   </mat-card>
+                                </a>
+                  </div>
+            </mat-card>
+        </div>
+    </div>
+    
+    

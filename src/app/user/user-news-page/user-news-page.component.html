@@ -1,0 +1,112 @@
+<app-header-main></app-header-main>
+<div fxFlex='row' fxLayout='row wrap' fxLayoutAlign='space-evenly start' class="mt-5">
+    <div fxFlex='30'>
+        <mat-card *ngFor='let card of cards' class="card mt-5">
+            <mat-card-title>{{card.title}}</mat-card-title>
+            <mat-card-subtitle>{{card.sub}}</mat-card-subtitle>
+            <mat-card-content style="border: 2px dashed orange;">
+                <input matInput type="text" value="{{card.code}}" #userinput style="border: none;">
+                <button mat-raised-button (click)="copyInputMessage(userinput)"
+                    style="background-color: orange;">Copy</button>
+            </mat-card-content>
+            <button mat-mini-fab class="p-0">
+                <a href="user/coupons">
+                    <mat-icon aria-hidden="false" aria-label="Example home icon" style="color: black;">
+                      keyboard_arrow_right
+                    </mat-icon>
+                  </a>
+            </button>
+            <mat-card-actions>
+                Valid till {{card.date}}
+            </mat-card-actions>
+        </mat-card>
+        <mat-card *ngFor='let card of cards' class="card">
+            <mat-card-title>{{card.title}}</mat-card-title>
+            <mat-card-subtitle>{{card.sub}}</mat-card-subtitle>
+            <mat-card-content style="border: 2px dashed orange;">
+                <input matInput type="text" value="{{card.code}}" #userinput style="border: none;">
+                <button mat-raised-button (click)="copyInputMessage(userinput)"
+                    style="background-color: orange;">Copy</button>
+            </mat-card-content>
+            <button mat-mini-fab class="p-0">
+                <a href="user/coupons">
+                    <mat-icon aria-hidden="false" aria-label="Example home icon" style="color: black;">
+                      keyboard_arrow_right
+                    </mat-icon>
+                  </a>
+            </button>
+            <mat-card-actions>
+                Valid till {{card.date}}
+            </mat-card-actions>
+        </mat-card>
+        <mat-card *ngFor='let card of cards' class="card">
+            <mat-card-title>{{card.title}}</mat-card-title>
+            <mat-card-subtitle>{{card.sub}}</mat-card-subtitle>
+            <mat-card-content style="border: 2px dashed orange;">
+                <input matInput type="text" value="{{card.code}}" #userinput style="border: none;">
+                <button mat-raised-button (click)="copyInputMessage(userinput)"
+                    style="background-color: orange;">Copy</button>
+            </mat-card-content>
+            <button mat-mini-fab class="p-0">
+                <a href="user/coupons">
+                    <mat-icon aria-hidden="false" aria-label="Example home icon" style="color: black;">
+                      keyboard_arrow_right
+                    </mat-icon>
+                  </a>
+            </button>
+            <mat-card-actions>
+                Valid till {{card.date}}
+            </mat-card-actions>
+        </mat-card>
+    </div>
+    <div fxFlex='10'>
+    </div>
+    <div fxFlex='60'>
+        <mat-card fxFlex='row' fxLayout='row wrap'>
+            <div fxFlex= '100' fxLayout='row wrap' fxLayoutGap='10px' fxLayoutAlign='space-evenly center' class="mt-5">
+            <img [src]="new_post1" alt="" class="w-60"> <br>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident illo similique neque voluptate officia magni obcaecati, deserunt reiciendis accusamus officiis nemo, hic omnis porro dolores in dolor saepe incidunt nostrum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi itaque culpa dolore quis doloremque, cum quisquam repellat necessitatibus temporibus nam? Autem aut, nemo ipsum id reprehenderit molestias nulla animi et.
+              </div>
+            <mat-card-title fxFlex='row' fxLayout='row wrap' class="mt-5">Read More Blogs</mat-card-title> <br>
+            <div fxFlex= '100' fxLayout='row wrap' fxLayoutGap='10px' fxLayoutAlign='space-evenly center' class="mt-5">
+                <a href="/user/news">
+                <mat-card fxFlex='row' fxLayout='row wrap'  *ngFor='let new of news'> 
+                    <mat-card class="example-extra-box" [ngStyle]="{'background-image': 'url(' + new_post + ')'}" ></mat-card>
+                     <div class="mt-3">
+                       <p class="text-dark font-weight-bold m-0"> {{new.heading}}</p> <br>
+                      <p class="text-secondary m-0">Lorem ipsum dolor,<br> sit amet consectetur adipisicing elit. </p>
+                      <button mat-flat-button style="color: black;">
+                        {{new.more}}
+                    </button>
+                    </div>
+                   </mat-card>
+                </a>
+                <a href="/user/news">
+                   <mat-card fxFlex='row' fxLayout='row wrap'  *ngFor='let new of news'>
+                    <mat-card class="example-extra-box" [ngStyle]="{'background-image': 'url(' + new_post + ')'}" ></mat-card>
+                     <div class="mt-3">
+                        <p class="text-dark font-weight-bold m-0"> {{new.heading}}</p> <br>
+                        <p class="text-secondary m-0">Lorem ipsum dolor,<br> sit amet consectetur adipisicing elit. </p>
+                        <button mat-flat-button style="color: black;">
+                          {{new.more}}
+                      </button>
+                    </div>
+                   </mat-card>
+                </a>
+                <a href="/user/news">
+                    <mat-card fxFlex='row' fxLayout='row wrap'  *ngFor='let new of news'>
+                     <mat-card class="example-extra-box" [ngStyle]="{'background-image': 'url(' + new_post + ')'}"></mat-card>
+                      <div class="mt-3">
+                        <p class="text-dark font-weight-bold m-0"> {{new.heading}}</p> <br>
+                        <p class="text-secondary m-0">Lorem ipsum dolor,<br> sit amet consectetur adipisicing elit. </p>
+                        <button mat-flat-button style="color: black;">
+                          {{new.more}}
+                      </button>
+                     </div>
+                    </mat-card>
+                 </a>
+              </div>
+        </mat-card>
+    </div>
+</div>

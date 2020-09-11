@@ -1,0 +1,24 @@
+<app-header-main></app-header-main>
+<div class="subscription_plan " id="sub" style="background-color:whitesmoke">
+    <div class="container">
+        <h2 class="text-center text-dark p-2">Choose The Plan</h2>
+        <h3 class="text-center">Upgrade At Anytime</h3>
+        <div class="col-md-12 text-center">
+            <owl-carousel [options]="pricingCarousel" [items]="price"
+                [carouselClasses]="['plan-slider owl-carousel owl-theme']">
+                <div class="item" *ngFor="let prices of price">
+                    <div class="package-box">
+                        <h3 style="border-bottom: 1px solid gray;">{{prices.type}}</h3>
+                        <h3 class="text-center mb-3"><i class="fa fa-inr mr-2"></i>{{prices.price}}</h3>
+                        <div class="price-plan text-center">
+                            <ul [innerHTML]="prices.feature"></ul>
+                            <a routerLink="/payment">
+                                <div class="price-plan-btn rounded-pill px-5 ">Choose</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </owl-carousel>
+        </div>
+    </div>
+</div>

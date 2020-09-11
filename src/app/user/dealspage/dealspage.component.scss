@@ -1,0 +1,128 @@
+.example-small-box, .example-large-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px;
+  padding: 16px;
+  border-radius: 8px;
+}
+.example-small-box {
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.mt-5 {
+  margin-top: 9rem !important;
+}
+.mat-tab-label-active {
+  border-bottom: 5px solid black;
+}
+.example-card{
+ color: gray;
+}
+mat-tab-group{
+  width: 75%;
+}
+mat-expansion-panel{
+  line-height: 20px;
+  font-size: x-large;
+  a{
+    font-size: large;
+    line-height: 10px;
+  }
+  }
+      @media only screen and (max-width:768px){
+        mat-card-title{
+        font: x-small ;
+        font-weight: bolder;
+        color: black;
+        }
+        mat-card-subtitle{
+        font: small ;
+        color: gray;
+        }
+        .ml-4 {
+        margin-left: 2.7em !important;
+        }
+        mat-card-actions{
+        font: small ;
+        color: gray;
+        }
+        mat-card-content{
+          font-size: medium;
+            color: black;
+            width:100%;
+            input{
+              font-size: medium;
+              width: 100%;
+            }
+            button{
+                color: white;
+                height: 35px;
+                width: 100%;
+                font-size: medium;
+            }
+        }
+        .p-0{
+            margin-left: 99%;
+            margin-top: -10px;
+        }
+        mat-expansion-panel{
+          line-height: 20px;
+          mat-expansion-panel-header{
+            font-size: medium;
+            }
+          a{
+            font-size: small;
+            line-height: 12px;
+          }
+        }
+        }
+        @media only screen and (min-width:769px){
+          mat-card-title{
+          font: x-large ;
+          font-weight: bolder;
+          color: black;
+          }
+          mat-card-subtitle{
+          font: large ;
+          color: gray;
+          }
+          .ml-4 {
+          margin-left: 2.7em !important;
+          }
+          mat-card-actions{
+          font: large ;
+          color: gray;
+          }
+          mat-card-content{
+              color: black;
+              width:100%;
+              input{
+                font-size: large;
+                width: 50%;
+              }
+              button{
+                  color: white;
+                  height: 35px;
+                  width: 50%;
+                  font-size: large;
+              }
+          }
+          .p-0{
+              margin-left: 99%;
+              margin-top: -10px;
+          }
+          mat-expansion-panel{
+            line-height: 20px;
+            mat-expansion-panel-header{
+              font-size: large;
+              }
+            a{
+              font-size: medium;
+              line-height: 15px;
+            }
+          }
+          }

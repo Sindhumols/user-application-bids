@@ -1,0 +1,437 @@
+<app-header-main></app-header-main>
+<div fxFlex="row" fxLayout='row wrap' fxLayoutAlign='space-evenly start' fxLayoutGap='2px' >
+  <div fxFlex='25'>
+    <mat-card *ngFor='let card of cards' class="card mt-5">
+      <mat-card-title>{{card.title}}</mat-card-title>
+      <mat-card-subtitle>{{card.sub}}</mat-card-subtitle>
+      <mat-card-content style="border: 2px dashed orange;">
+          <input matInput type="text" value="{{card.code}}" #userinput style="border: none;">
+          <button mat-raised-button (click)="copyInputMessage(userinput)"
+              style="background-color: orange;">Copy</button>
+      </mat-card-content>
+      <br>
+      <button mat-mini-fab class="p-0" style="background-color: white;">
+        <a href="user/coupons">
+          <mat-icon aria-hidden="false" aria-label="Example home icon" style="color: black;">
+            keyboard_arrow_right
+          </mat-icon>
+        </a>
+      </button>
+      <mat-card-actions>
+          Valid till {{card.date}}
+      </mat-card-actions>
+  </mat-card>
+ <div class="categories">
+      <h4 style="color: orange">Categories</h4>
+      <mat-nav-list>
+        <mat-expansion-panel *ngFor="let value of avengers" [expanded]='avengers'>
+          <mat-expansion-panel-header>
+            {{value.naming}}
+          </mat-expansion-panel-header>
+          <a mat-list-item >
+            <div fxFlex='100' fxLayout='row wrap'>
+              <div fxLayout="row" fxLayoutAlign="start start" >{{value.name}}</div>
+              <div fxLayout="row" fxLayoutAlign="end center" >({{value.num}})</div>
+          </div>
+        </a>
+          <a mat-list-item >
+            <div fxFlex='100' fxLayout='row wrap'>
+              <div fxLayout="row" fxLayoutAlign="start start" >{{value.name1}}</div>
+              <div fxLayout="row" fxLayoutAlign="end center" >   ({{value.num1}})</div>
+          </div>
+        </a>
+          <a mat-list-item >
+            <div fxFlex='100' fxLayout='row wrap'>
+              <div fxLayout="row" fxLayoutAlign="start start" >{{value.name2}}</div>
+              <div fxLayout="row" fxLayoutAlign="end center" >   ({{value.num2}})</div>
+          </div>
+         </a>
+          <a mat-list-item >
+            <div fxFlex='100' fxLayout='row wrap' >
+              <div fxLayout="row" fxLayoutAlign="start start" >{{value.name3}}</div>
+              <div fxLayout="row" fxLayoutAlign="end center" >   ({{value.num3}})</div>
+          </div>
+           </a>
+          <a mat-list-item >
+            <div fxFlex='100' fxLayout='row wrap' >
+              <div fxLayout="row" fxLayoutAlign="start start" > {{value.name4}}</div>
+              <div fxLayout="row" fxLayoutAlign="end center" >   ({{value.num4}})</div>
+          </div>
+          </a>
+        </mat-expansion-panel>
+      </mat-nav-list>
+ </div>
+</div>
+<div fxFlex='10'>
+</div>
+    <mat-card fxFlex='60' fxLayout='row wrap' fxLayoutGap = '5px' fxLayoutAlign='space-evenly center' class="mat-tab-block mt-5">
+        <mat-tab-group mat-align-tabs="center">
+          <mat-tab label="Trending Deals" style="color: black;" id="user/trends">
+       <div fxFlex= '100' fxLayout='row wrap' fxLayoutGap='20px' fxLayoutAlign='space-evenly start' class="mt-2">
+            <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + beautysale + ')'}">
+              <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+               <a href="offer">
+                 <button mat-raised-button class="rounded-pill">Go To</button>
+               </a>
+              </div>
+            </mat-card>
+            <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + pizzasale + ')'}">
+              <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+               <a href="offer">
+                 <button mat-raised-button class="rounded-pill">Go To</button>
+               </a>
+              </div>
+            </mat-card>
+            <mat-card fxFlex='row' class="example-small-box " [ngStyle]="{'background-image': 'url(' + weekendsale + ')'}">
+              <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+               <a href="offer">
+                 <button mat-raised-button class="rounded-pill">Go To</button>
+               </a>
+              </div>
+            </mat-card>
+            <mat-card fxFlex='row' class="example-small-box " [ngStyle]="{'background-image': 'url(' + bigsale + ')'}">
+              <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+               <a href="offer">
+                 <button mat-raised-button class="rounded-pill">Go To</button>
+               </a>
+              </div>
+            </mat-card>
+      </div>
+      <div fxFlex= '100' fxLayout='row wrap' fxLayoutGap='20px' fxLayoutAlign='space-evenly start' class="mt-2">
+        <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + sale + ')'}">
+          <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+           <a href="offer">
+             <button mat-raised-button class="rounded-pill">Go To</button>
+           </a>
+          </div>
+        </mat-card>
+        <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + websale + ')'}">
+          <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+           <a href="offer">
+             <button mat-raised-button class="rounded-pill">Go To</button>
+           </a>
+          </div>
+        </mat-card>
+        <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + packsale + ')'}">
+          <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+           <a href="offer">
+             <button mat-raised-button class="rounded-pill">Go To</button>
+           </a>
+          </div>
+        </mat-card>
+        <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + beautysale + ')'}">
+          <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+           <a href="offer">
+             <button mat-raised-button class="rounded-pill">Go To</button>
+           </a>
+          </div>
+        </mat-card>
+      </div>
+      <div fxFlex= '100' fxLayout='row wrap' fxLayoutGap='20px' fxLayoutAlign='space-evenly start' class="mt-2">
+        <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + pizzasale + ')'}">
+          <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+           <a href="offer">
+             <button mat-raised-button class="rounded-pill">Go To</button>
+           </a>
+          </div>
+        </mat-card>
+        <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + weekendsale + ')'}">
+          <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+           <a href="offer">
+             <button mat-raised-button class="rounded-pill">Go To</button>
+           </a>
+          </div>
+        </mat-card>
+        <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + bigsale + ')'}">
+          <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+           <a href="offer">
+             <button mat-raised-button class="rounded-pill">Go To</button>
+           </a>
+          </div>
+        </mat-card>
+        <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + sale + ')'}">
+          <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+           <a href="offer">
+             <button mat-raised-button class="rounded-pill">Go To</button>
+           </a>
+          </div>
+        </mat-card>
+      </div>
+      <div fxFlex= '100' fxLayout='row wrap' fxLayoutGap='20px' fxLayoutAlign='space-evenly start' class="mt-2">
+        <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + websale + ')'}">
+          <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+           <a href="offer">
+             <button mat-raised-button class="rounded-pill">Go To</button>
+           </a>
+          </div>
+        </mat-card>
+        <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + packsale + ')'}">
+          <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+           <a href="offer">
+             <button mat-raised-button class="rounded-pill">Go To</button>
+           </a>
+          </div>
+        </mat-card>
+        <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + bigsale + ')'}">
+          <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+           <a href="offer">
+             <button mat-raised-button class="rounded-pill">Go To</button>
+           </a>
+          </div>
+        </mat-card>
+        <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + beautysale + ')'}">
+          <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+           <a href="offer">
+             <button mat-raised-button class="rounded-pill">Go To</button>
+           </a>
+          </div>
+        </mat-card>
+      </div>
+            </mat-tab>
+            <mat-tab label="Best Deals" id="user/deal-near-you">
+              <div fxFlex= '100' fxLayout='row wrap' fxLayoutGap='20px' fxLayoutAlign='space-evenly start' class="mt-2">
+                <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + beautysale + ')'}">
+                  <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+                   <a href="offer">
+                     <button mat-raised-button class="rounded-pill">Go To</button>
+                   </a>
+                  </div>
+                </mat-card>
+                <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + pizzasale + ')'}">
+                  <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+                   <a href="offer">
+                     <button mat-raised-button class="rounded-pill">Go To</button>
+                   </a>
+                  </div>
+                </mat-card>
+                <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + weekendsale + ')'}">
+                  <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+                   <a href="offer">
+                     <button mat-raised-button class="rounded-pill">Go To</button>
+                   </a>
+                  </div>
+                </mat-card>
+                <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + bigsale + ')'}">
+                  <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+                   <a href="offer">
+                     <button mat-raised-button class="rounded-pill">Go To</button>
+                   </a>
+                  </div>
+                </mat-card>
+          </div>
+          <div fxFlex= '100' fxLayout='row wrap' fxLayoutGap='20px' fxLayoutAlign='space-evenly start' class="mt-2">
+            <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + sale + ')'}">
+              <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+               <a href="offer">
+                 <button mat-raised-button class="rounded-pill">Go To</button>
+               </a>
+              </div>
+            </mat-card>
+            <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + websale + ')'}">
+              <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+               <a href="offer">
+                 <button mat-raised-button class="rounded-pill">Go To</button>
+               </a>
+              </div>
+            </mat-card>
+            <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + packsale + ')'}">
+              <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+               <a href="offer">
+                 <button mat-raised-button class="rounded-pill">Go To</button>
+               </a>
+              </div>
+            </mat-card>
+            <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + beautysale + ')'}">
+              <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+               <a href="offer">
+                 <button mat-raised-button class="rounded-pill">Go To</button>
+               </a>
+              </div>
+            </mat-card>
+          </div>
+          <div fxFlex= '100' fxLayout='row wrap' fxLayoutGap='20px' fxLayoutAlign='space-evenly start' class="mt-2">
+            <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + pizzasale + ')'}">
+              <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+               <a href="offer">
+                 <button mat-raised-button class="rounded-pill">Go To</button>
+               </a>
+              </div>
+            </mat-card>
+            <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + weekendsale + ')'}">
+              <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+               <a href="offer">
+                 <button mat-raised-button class="rounded-pill">Go To</button>
+               </a>
+              </div>
+            </mat-card>
+            <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + bigsale + ')'}">
+              <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+               <a href="offer">
+                 <button mat-raised-button class="rounded-pill">Go To</button>
+               </a>
+              </div>
+            </mat-card>
+            <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + sale + ')'}">
+              <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+               <a href="offer">
+                 <button mat-raised-button class="rounded-pill">Go To</button>
+               </a>
+              </div>
+            </mat-card>
+          </div>
+          <div fxFlex= '100' fxLayout='row wrap' fxLayoutGap='20px' fxLayoutAlign='space-evenly start' class="mt-2">
+            <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + websale + ')'}">
+              <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+               <a href="offer">
+                 <button mat-raised-button class="rounded-pill">Go To</button>
+               </a>
+              </div>
+            </mat-card>
+            <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + packsale + ')'}">
+              <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+               <a href="offer">
+                 <button mat-raised-button class="rounded-pill">Go To</button>
+               </a>
+              </div>
+            </mat-card>
+            <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + bigsale + ')'}">
+              <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+               <a href="offer">
+                 <button mat-raised-button class="rounded-pill">Go To</button>
+               </a>
+              </div>
+            </mat-card>
+            <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + beautysale + ')'}">
+              <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+               <a href="offer">
+                 <button mat-raised-button class="rounded-pill">Go To</button>
+               </a>
+              </div>
+            </mat-card>
+          </div>
+            </mat-tab>
+            <mat-tab label="Deals Near Me" id="user/best-deals">
+              <div fxFlex= '100' fxLayout='row wrap' fxLayoutGap='20px' fxLayoutAlign='space-evenly start' class="mt-2">
+                <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + beautysale + ')'}">
+                  <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+                   <a href="offer">
+                     <button mat-raised-button class="rounded-pill">Go To</button>
+                   </a>
+                  </div>
+                </mat-card>
+                <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + pizzasale + ')'}">
+                  <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+                   <a href="offer">
+                     <button mat-raised-button class="rounded-pill">Go To</button>
+                   </a>
+                  </div>
+                </mat-card>
+                <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + weekendsale + ')'}">
+                  <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+                   <a href="offer">
+                     <button mat-raised-button class="rounded-pill">Go To</button>
+                   </a>
+                  </div>
+                </mat-card>
+                <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + bigsale + ')'}">
+                  <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+                   <a href="offer">
+                     <button mat-raised-button class="rounded-pill">Go To</button>
+                   </a>
+                  </div>
+                </mat-card>
+          </div>
+          <div fxFlex= '100' fxLayout='row wrap' fxLayoutGap='20px' fxLayoutAlign='space-evenly start' class="mt-2">
+            <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + sale + ')'}">
+              <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+               <a href="offer">
+                 <button mat-raised-button class="rounded-pill">Go To</button>
+               </a>
+              </div>
+            </mat-card>
+            <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + websale + ')'}">
+              <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+               <a href="offer">
+                 <button mat-raised-button class="rounded-pill">Go To</button>
+               </a>
+              </div>
+            </mat-card>
+            <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + packsale + ')'}">
+              <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+               <a href="offer">
+                 <button mat-raised-button class="rounded-pill">Go To</button>
+               </a>
+              </div>
+            </mat-card>
+            <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + beautysale + ')'}">
+              <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+               <a href="offer">
+                 <button mat-raised-button class="rounded-pill">Go To</button>
+               </a>
+              </div>
+            </mat-card>
+          </div>
+          <div fxFlex= '100' fxLayout='row wrap' fxLayoutGap='20px' fxLayoutAlign='space-evenly start' class="mt-2">
+            <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + pizzasale + ')'}">
+              <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+               <a href="offer">
+                 <button mat-raised-button class="rounded-pill">Go To</button>
+               </a>
+              </div>
+            </mat-card>
+            <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + weekendsale + ')'}">
+              <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+               <a href="offer">
+                 <button mat-raised-button class="rounded-pill">Go To</button>
+               </a>
+              </div>
+            </mat-card>
+            <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + bigsale + ')'}">
+              <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+               <a href="offer">
+                 <button mat-raised-button class="rounded-pill">Go To</button>
+               </a>
+              </div>
+            </mat-card>
+            <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + sale + ')'}">
+              <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+               <a href="offer">
+                 <button mat-raised-button class="rounded-pill">Go To</button>
+               </a>
+              </div>
+            </mat-card>
+          </div>
+          <div fxFlex= '100' fxLayout='row wrap' fxLayoutGap='20px' fxLayoutAlign='space-evenly start' class="mt-2">
+            <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + websale + ')'}">
+              <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+               <a href="offer">
+                 <button mat-raised-button class="rounded-pill">Go To</button>
+               </a>
+              </div>
+            </mat-card>
+            <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + packsale + ')'}">
+              <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+               <a href="offer">
+                 <button mat-raised-button class="rounded-pill">Go To</button>
+               </a>
+              </div>
+            </mat-card>
+            <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + bigsale + ')'}">
+              <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+               <a href="offer">
+                 <button mat-raised-button class="rounded-pill">Go To</button>
+               </a>
+              </div>
+            </mat-card>
+            <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + beautysale + ')'}">
+              <div fxLayout="column" fxLayoutAlign="end center" class="mt-5"  >
+               <a href="offer">
+                 <button mat-raised-button class="rounded-pill">Go To</button>
+               </a>
+              </div>
+            </mat-card>
+          </div>
+            </mat-tab>
+          </mat-tab-group>
+    </mat-card>
+  </div>

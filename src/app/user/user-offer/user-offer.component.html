@@ -1,0 +1,166 @@
+<!-----------------------------------------BIG SALE--------------------------------------------------------->
+<div class="subscription_plan p-4" style="margin-top: -9%">
+  <div class="container">
+    <div class="col-md-12 text-center">
+      <owl-carousel [options]="pricingCarousel" [items]="price"
+        [carouselClasses]="['plan-slider owl-carousel owl-theme']">
+        <div class="item" *ngFor="let prices of price">
+          <a routerLink="/offer">
+            <div class="package-box">
+              <img src={{prices.img}} class='pic1'>
+            </div>
+          </a>
+        </div>
+      </owl-carousel>
+    </div>
+  </div>
+</div>
+<div class="row mb-3">
+</div>
+<!--------------------------------------------Offers---------------------------------------------------->
+<div class="subscription_plan p-4" style="margin-top: -3%">
+  <div class="col-md-12 text-center">
+    <owl-carousel [options]="offers" [items]="offer" [carouselClasses]="['plan-slider owl-carousel owl-theme']">
+      <div class="item" *ngFor="let offer1 of offer">
+       
+          <div class="container-fluid">
+            <a routerLink="/{{offer1.route}}">
+            <img src={{offer1.img1}} class="w-100 img-fluid mh-100 pic1">
+            <div class="content text-center w-100">
+              <h3 class="p-4 m-4">{{offer1.type}}</h3>
+            </div>
+          </a>
+          </div>
+      </div>
+    </owl-carousel>
+  </div>
+</div>
+<div class="row mb-3">
+</div>
+<!---------------------------------------Deals Of the day------------------------------------------------------------->
+<div class="class">
+  <h3 class="text-dark" style="padding: 7%;margin-left: -3%;">Deals Of The Day</h3>
+  <div class="subscription_plan p-4" [class.show]="show" style="margin-top: -9%">
+    <div class="col-md-12 text-center">
+      <owl-carousel [options]="deals_of_day" [items]="deal" [carouselClasses]="['plan-slider owl-carousel owl-theme']">
+        <div class="item" *ngFor="let deal1 of deal">
+         
+            <div class="container-fluid">
+              <a routerLink="/offer">
+              <img src={{deal1.img2}} class="w-100 img-fluid mh-100 pic1">
+            </a>
+            </div>
+        
+        </div>
+      </owl-carousel>
+    </div>
+  </div>
+</div>
+<a routerLink="/user/dealsoftheday">
+  <div class="p-4 p-50 ">
+    <h4 class="text-dark" style="margin-top: -3%; margin-left: 91%">View All</h4>
+  </div>
+</a>
+<!------------------------------------------Deals u love------------------------------------------------------------->
+<div class="class">
+  <h3 class="text-dark" style="padding: 7%;margin-left: -3%;">Deals You Love</h3>
+  <div class="subscription_plan p-4" [class.show]="show" style="margin-top: -9%">
+    <div class="col-md-12 text-center">
+      <owl-carousel [options]="deals_U_Love" [items]="deallove"
+        [carouselClasses]="['plan-slider owl-carousel owl-theme']">
+        <div class="item" *ngFor="let deal2 of deallove">
+         
+            <div class="container-fluid">
+              <a routerLink="/offer">
+              <img src={{deal2.img3}} class="w-100 img-fluid mh-100 pic1">
+            </a>
+            </div>
+        
+        </div>
+      </owl-carousel>
+    </div>
+  </div>
+</div>
+<a routerLink="/user/dealsyoulove">
+  <div class="p-4 p-50 ">
+    <h4 class="text-dark" style="margin-top: -3%; margin-left: 91%">View All</h4>
+  </div>
+</a>
+<!----------------------------------------Popular Brands--------------------------------------------->
+<div class="class">
+  <h3 class="text-dark" style="padding: 7%;margin-left: -3%;">Popular Brands</h3>
+  <div class="subscription_plan p-4" [class.show]="show" style="margin-top: -9%">
+    <div class="col-md-12 text-center">
+      <owl-carousel [options]="popular" [items]="pop" [carouselClasses]="['plan-slider owl-carousel owl-theme']">
+        <div class="item" *ngFor="let popp of pop">
+          <a routerLink="/offer">
+            <div class="container-fluid">
+              <img src={{popp.img4}} class="w-100 img-fluid mh-100 pic1">
+            </div>
+          </a>
+        </div>
+      </owl-carousel>
+    </div>
+  </div>
+</div>
+<a routerLink="/user/popularbrands">
+  <div class="p-4 p-50 ">
+    <h4 class="text-dark" style="margin-top: -3%; margin-left: 91%">View All</h4>
+  </div>
+</a>
+<!------------------------------------------------Catagories----------------------------------------------------------------------->
+<div class="cla">
+  <div class="container-fluid">
+    <h1 class=" text-dark text-center display-4">Categories</h1>
+    <mat-card fxLayout='row wrap' fxLayoutGap = '5px' fxLayoutAlign='space-evenly start' class="mt-2">
+      <div fxFlex= '100' fxLayout='row wrap' fxLayoutGap='3px' fxLayoutAlign='space-evenly start'>
+       <a href="/user/resturants">
+        <mat-card class="example-small-box" [ngStyle]="{'background-image': 'url(' + resturants + ')'}">
+          <mat-card-title class="mt-5">Restaurants</mat-card-title>
+        </mat-card>
+       </a>
+       
+       <a href="/user/pubs">
+        <mat-card class="example-small-box" [ngStyle]="{'background-image': 'url(' + pubs + ')'}">
+          <mat-card-title class="mt-5">Pubs <br> and <br> Bars</mat-card-title>
+        </mat-card>
+       </a> 
+       
+       <a href="/user/fashion">
+        <mat-card class="example-small-box" [ngStyle]="{'background-image': 'url(' + fashion + ')'}">
+          <mat-card-title class="mt-5" >Fashion</mat-card-title>
+        </mat-card>
+       </a> 
+      
+       <a href="/user/cowrk">
+        <mat-card class="example-small-box" [ngStyle]="{'background-image': 'url(' + cowork + ')'}">
+          <mat-card-title class="mt-5" >Co-working <br> Space</mat-card-title>
+        </mat-card>
+       </a> 
+      </div>
+     
+    <div fxFlex= '100' fxLayout='row wrap' fxLayoutGap='3px' fxLayoutAlign='space-evenly start'>
+     
+      <a href="/user/game">
+        <mat-card class="example-small-box" [ngStyle]="{'background-image': 'url(' + game + ')'}">
+          <mat-card-title class="mt-5" >Games <br> and <br> Play</mat-card-title>
+        </mat-card>
+       </a>  
+       <a href="user/cosmetics">
+        <mat-card class="example-small-box" [ngStyle]="{'background-image': 'url(' + cosmetics + ')'}">
+          <mat-card-title class="mt-5" >Cosmetics</mat-card-title>
+        </mat-card>
+       </a>
+     <a href="/user/entertainment">
+      <mat-card class="example-small-box" [ngStyle]="{'background-image': 'url(' + entertainment + ')'}">
+        <mat-card-title class="mt-5" >Entertainment</mat-card-title>
+      </mat-card>
+     </a> 
+     <a href="/user/categories">
+      <mat-card class="example-small-box" [ngStyle]="{'background-image': 'url(' + more + ')'}">
+        <mat-card-title class="mt-5" >More Categories</mat-card-title>
+      </mat-card>
+     </a> 
+      </div>
+    </mat-card>
+  </div>

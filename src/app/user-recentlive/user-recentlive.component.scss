@@ -1,0 +1,389 @@
+.col-md-2{
+    max-width: 100%;
+}
+.btn{
+    left: 111px;
+top: -22px;
+}
+.first{
+    height: 45px;
+}
+.rounded-circle{
+    left: 169px;
+    top: -42px;
+}
+// .col-md-12{
+//     display: block;
+// }
+.video11{
+position: relative;
+margin-top: 8%;
+margin-left: 3%;
+}
+ .col-md-12{
+    display:flex;
+    }
+    .col-2{
+    flex:1;
+    max-width: 30%;
+    margin-top: 6%;
+    }
+    .submain{
+        top:100%;
+        left: -102%;
+    }
+
+    .mat-icon{
+    display:flex;
+    }
+    //----------------------------------//
+    .main{
+        display:flex;
+        margin-top: 89px;
+        width: 320px;
+    }
+    .img1{
+        display:flex;
+    }
+    
+    .rounded-pill{
+        background-color:#ff8510;
+        color:white;
+        }
+        .img2{
+            border-radius:50%;
+            height:10%;
+            width:8%;
+        }
+        .clr{
+            background-color:red;
+            position:absolute;
+            margin-top:-187px;
+        }
+    .container {
+            font-size: 14px;
+        line-height: 18px;
+        height: 52px;
+            overflow: hidden;
+          }
+          
+          .show {
+            overflow: visible;
+            height: auto;
+          }
+          .video{
+            width:331px;
+            margin-left:-37px;
+            padding:36px;
+            margin-top: -20px;
+            }
+            .video1{
+                width:331px;
+                margin-left:-37px;
+                padding:36px;
+                margin-top: -20px;
+                }
+               .headh5{
+                    margin-left: 10%;
+                    margin-top: -23px;
+                    text-align: center;
+                }
+                // .text-white{
+                //     position:absolute;
+                //     margin-top:-42%;
+                //     color:red;
+                // }
+          /*-----------laptop/Desktop-----------------------*/
+    @media(min-width:1024px){
+        .video11{
+            position: relative;
+    margin-top: 8%;
+    margin-left: 3%;
+    width: 668px;
+    height: auto;
+        }
+        .sub-mat{
+            width: 334px;
+            margin-left: 367px;
+            margin-top: 56px;
+        }
+        .video{
+margin-left: -17px;
+        }
+        .rounded-pill{
+            left: 14%;
+            top: -24px;
+        }
+    .headh5{
+            margin-left: -3%;
+            margin-top: -23px;
+        }
+        .example-card{
+            top: -56px;
+        }
+        .text-white{
+            left:41px;
+            margin-top: -374px;
+        }
+        .live{
+            top: 36px;
+        }
+    }
+    /*-------------tablet/Ipad----------------------*/
+    @media(min-width:769px) and (max-width:1023px){
+        .video11{
+            position: relative;
+    margin-top: 8%;
+    margin-left: 3%;
+    width: 698px;
+        }
+        .col-2{
+            max-width: 30%;
+            margin-top: 0%;
+        }
+        .submain{
+            top: 100%;
+            left: 5%;
+        }
+        .sub-mat{
+            width: 336px;
+    //         margin-left: -27px;
+    // margin-top: 56px;
+    margin-left: -36px;
+    margin-top: 20px;
+        }
+        .rounded-pill{
+            left: 48px;
+            top: -28px;
+        }
+        .btn{
+            left: 94px;
+            top: -22px;
+        }
+        .video{
+            margin-left: -14px;
+        }
+        .headh5{
+            margin-left: -107px;
+            margin-top: 43px;
+        }
+        .text-white{
+            position: absolute;
+    margin-top: -388px;
+    left: 42px;
+        }
+        .live{
+            margin-left: 2px;
+            top:38px;
+        }
+    }
+    /*--------------mobile----------------------*/
+    @media(max-width:768px){
+    .example-card{
+        transition: box-shadow 280ms cubic-bezier(.4,0,.2,1);
+    display: block;
+    position: relative;
+    padding: 16px;
+    border-radius: 4px;
+    height: 302px;
+    width: 173px;
+    }
+    .video11{
+        position: relative;
+        margin-top: 8%;
+        margin-left: 2%;
+        width: 467px;
+    }
+    .col-2{
+        flex: 1;
+        max-width: 30%;
+        margin-top: -2%;
+        height: 100px;
+    }
+    .btn{
+        left: 65px;
+        top: -21px;
+    }
+    .rounded-circle{
+        left:137px;
+        top: -43px;
+    }
+    .sub-mat{
+        width: 223px;
+        margin-left: 256px;
+    }
+    .video{
+        width: 277px;
+        margin-left:-44px;
+        padding: 36px;
+    }
+    .rounded-pill{
+        left: -2px;
+        top: -26px;
+    }
+    .text-white{
+        position: absolute;
+margin-top: -54%;
+margin-left: 13px;
+    }
+    .live{
+        margin-left: -3px;
+        top:36px;
+    }
+    .headh5{
+        margin-top: 28px;
+    margin-left: -39px;
+    }
+    }
+     @media(max-width:468px){
+          
+    .example-card{
+        top: -59px;
+        width: 100px;
+        height: 385px;
+    }
+    .video11{
+        height: 238px;
+        width: 374px;
+        position: relative;
+        margin-top: 4%;
+        margin-left: -7%;
+    }
+    .submain{
+        width: 200px;
+        margin-top: 39px;
+        margin-left: 351px;
+    }
+    .btn{
+        left: 0px;
+    top: -2px;
+    width: 62px;
+    }
+    .first{
+        border: 3px dashed orange;
+        height: 64px;
+    }
+    .rounded-circle{
+        left: 49px;
+    top: -62px;
+    }
+    .block{
+        display:block;
+    }
+    .sub-mat{
+        width: 286px;
+        margin-left: 5px;
+    }
+    .video{
+        margin-top: -38px;
+        width: 316px;
+    }
+       .rounded-pill{
+        left: 45px;
+        top: -38px;
+       }
+       .input{
+        width: 45px;
+     }
+     .text-white{
+         left: -16px;
+     }
+     .live{
+         top: 22px;
+         margin-left: 28px;
+     }
+     }
+     @media(max-width:425px){
+         .video11{
+            height: 238px;
+            width: 327px;
+            position: relative;
+            margin-top: 4%;
+            margin-left: -7%;
+         }
+         .submain{
+            width: 200px;
+            margin-top: 39px;
+            margin-left: 308px;
+         }
+         .example-card{
+             top:-16px;
+             height: 385px;
+         }
+         .text-white{
+            margin-top: -225px;
+         }
+         .headh5{
+             text-align: left;
+         }
+     }
+@media(max-width:375px){
+    .video11{
+        height: 238px;
+        width: 268px;
+        position: relative;
+        margin-top: -7%;
+        margin-left: -2%;
+    }
+    .submain{
+        width: 156px;
+        margin-top: 20px;
+    margin-left: 253px;
+    }
+    .example-card{
+        height: 385px;
+    }
+    .text-white{
+        margin-top: -193px;
+    margin-left: 31px;
+    }
+    .headh5{
+        margin-top: 9px;
+    margin-left: 19px;
+    }
+}
+
+     @media(max-width:320px){
+         .video11{
+            height: 294px;
+            width: 219px;
+            position: relative;
+            margin-top: -30%;
+            margin-left: 3%;
+         }
+         .input{
+            width: 45px;
+         }
+         .video{
+             width: 274px;
+             margin-top: -40px;
+         }
+         .sub-mat{
+             width: 242px;
+             height: 377px;
+             margin-left: -5px;
+            }
+         .rounded-pill{
+            left: 13px;
+            top:-38px;
+        }
+        .first{
+            width: 71px;
+        }
+        .submain{
+            width: 200px;
+            margin-top: 20px;
+            margin-left: 221px;
+        }
+        .example-card{
+            height: 385px;
+        }
+        .text-white{
+            margin-top: -210px;
+            margin-left: 35px;
+        }
+        .live{
+            margin-left: 27px;
+            margin-top: -7px;
+        }
+     }

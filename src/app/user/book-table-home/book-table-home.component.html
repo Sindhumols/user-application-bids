@@ -1,0 +1,351 @@
+<app-header-main></app-header-main>
+
+<!-- ---------------------------------------------body--------------------------------------------------- -->
+<div class="main_content mt-4 row" style="background-color:whitesmoke;top:10%">
+  <div class="col-md-12">
+    <div class="col-md-4">
+      <h4 class="text-black text-align-left p-2 mt-0">{{storeName}}</h4>
+      <h5 class="text-black text-align-left mt-0">{{price}}</h5>
+      <hr>
+  <h5 class="text-black text-align-left mt-0"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>{{address}}</h5>
+      <hr>
+    <h5 class="text-black text-align-left mt-0">{{opentime}} </h5>
+      <div class="button1 row p-0 m-0">
+        <button bg-white mat-flat-button class="button1 m-2 mb-2">Party Section</button>
+        <button bg-white mat-flat-button class="button1 m-2 mb-2">Parking</button>
+        <button bg-white mat-flat-button class="button1 m-2 mb-2">Dance Floor</button>
+      </div>
+      <br>
+    </div>
+    <div class="col-md-2">
+      <a routerLink="/booktable"> <button class="booktable text-left" mat-flat-button
+          class="m-0 mb-2 rounded-pill px-5 h-40 ">Book Table </button></a>
+    </div>
+    <div class="col-md-3">
+      <a href="/offer">
+      <img class="photo mt-2 " src="../../../assets/images/pub/Silent_Disco_in_Bielefeld.png">
+    </a>
+      <br>
+    </div>
+    <div class="col-md-3">
+      <a href="/offer">
+      <img class="photo mt-2" src="../../../assets/images/merchantimages/lily_banse__YHSwy6uqvk_unsplas.png">
+      </a>
+      <br>
+    </div>
+  </div>
+</div>
+<div class="wrapper" [@expand] *ngIf="show1" fxLayout="row Wrap" fxLayoutAlign="start center">
+  <section style="width:100% ">
+    <mat-tab-group>
+      <mat-tab label="Raised Buttons">
+        <ng-template mat-tab-label style="width:100%">
+          Deals
+        </ng-template>
+        <br />
+        <div class="button-row">
+          <!---------------------------------------------------------------------------------------------------------------->
+          <div class=" row col-lg-12 m-0 p-0">
+            <div class="main col-md-8 m-2 p-0" style="background-color:whitesmoke;top:10%">
+              <div class="submain col-md-4 m-0 p-0">
+                <h5 class="text-black text-align-left"> 2 Cocktails + 1 Starter</h5>
+                <h6 class="text-black text-align-left ">Free Cancellation</h6>
+                <h6 class="text-black text-align-left ">Valid For : 2 People | Valid On : All Days | Timing :12Pm - 7Pm
+                </h6>
+                <!-- <button mat-flat-button class="m-0 mb-2 rounded-pill ">Deals</button> -->
+              </div>
+              <div class="submain ml-auto col-md-4">
+                <p class="mt-3"><s>1299 INR </s> 729 INR</p>
+                <h6>inc.of all taxes</h6>
+                <a routerLink="/remeed"><button mat-flat-button (click)="redeem()"
+                    class="m-0 mb-2 w-90 rounded-pill px-5 h-40 mt-5 ">Redeem</button></a>
+              </div>
+            </div>
+            <div class="main col-md-8 m-2 p-0" style="background-color:whitesmoke;top:10%">
+              <div class="submain col-md-4 m-0 p-0">
+                <h5 class="text-black text-align-left"> 2 Cocktails + 1 Starter</h5>
+                <h6 class="text-black text-align-left ">Free Cancellation</h6>
+                <h6 class="text-black text-align-left ">Valid For : 2 People | Valid On : All Days | Timing :12Pm - 7Pm
+                </h6>
+                <!-- <button mat-flat-button class="m-0 mb-2 rounded-pill ">Deals</button> -->
+              </div>
+              <div class="submain ml-auto col-md-4">
+                <p class="mt-3"><s>1299 INR </s> 729 INR</p>
+                <h6>inc.of all taxes</h6>
+                <a routerLink="/remeed"><button mat-flat-button (click)="redeem()"
+                    class="m-0 mb-2 w-90 rounded-pill px-5 h-40 mt-5 ">Redeem</button></a>
+              </div>
+            </div>
+            <!---------------------------------------------------------------------------------------------------------------->
+            <div class="kindered submain ml-auto col-md-4 ">
+              <mat-card class=" m-0 mt-0" style="width:100%; ">
+                <div class="heading mt-0 container-fluid w-100">
+                  <div class="subheading container-fluid w-100" style="margin-left: 10px;">
+                    <h3 class="text-black mt-0 m-0 p-2">Kindred</h3>
+                  </div>
+                  <div class="subheading text-dark">
+                    <a href="user/resturants">
+                    <h5 class="ml-auto text-black m-0 p-2">View All</h5>
+                  </a>
+                  </div>
+                </div>
+                <div class="hotel">
+                  <div class="container-fluid w-100 m-2" style="flex:1;">
+                    <a href="/offer">
+                    <img src="../../../assets/images/hotelbook.jpg" alt="" class="w-100 h-100 pic1">
+                    <div class=" content text-center w-100">
+                      <p class="text-center text-white mt-2">Puppy Bar <br> HSR Layout
+                      </p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="container-fluid w-100 m-2" style="flex:1;">
+                    <a href="/offer">
+                    <img src="../../../assets/images/hotelbook.jpg" alt="" class="w-100 h-100 pic1">
+                    <div class=" content text-center w-100">
+                      <p class="text-center text-white mt-2 ">Marries Bar <br> HSR Layout
+                      </p>
+                    </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="hotel">
+                  <div class="container-fluid w-100 p-2" style="flex:1;">
+                    <a href="/offer">
+                    <img src="../../../assets/images/bigsale.jpg" alt="" class="w-100 h-100 pic1">
+                    </a>
+                  </div>
+                  <div class="container-fluid w-100 p-2" style="flex:1;">
+                    <a href="/offer">
+                    <img src="../../../assets/images/bigsale.jpg" alt="" class="w-100 h-100 pic1">
+                    </a>
+                  </div>
+                </div>
+              </mat-card>
+            </div>
+          </div>
+          <div></div>
+        </div>
+      </mat-tab>
+      <mat-tab label="About">
+        <br />
+        <div class="button-row">
+          <!---------------------------------------------------------------------------------------------------------->
+          <div class="row col-lg-12">
+            <div class="main col-md-8" style="background-color:whitesmoke;top:10%">
+              <p class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente tempora officia magnam,
+                perspiciatis, expedita at excepturi,
+                assumenda dolorum delectus veritatis accusamus et ab obcaecati! Esse, recusandae similique. Harum, quia
+                illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero facilis deserunt quas dolore,
+                asperiores cumque
+                consectetur itaque sed qui ab ea, pariatur id repellat
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente tempora officia magnam, perspiciatis,
+                expedita at excepturi,
+                assumenda dolorum delectus veritatis accusamus et ab obcaecati! Esse, recusandae similique. Harum, quia
+                illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero facilis deserunt quas dolore,
+                asperiores cumque
+                consectetur itaque sed qui ab ea, pariatur id repellat vel accusantium deleniti, molestiae reiciendis
+                neque.
+              </p>
+              <!---------------------------------------------------------------------------------------------------------------->
+            </div>
+            <div class="submain ml-auto col-md-4 ">
+              <mat-card class=" m-0 mt-0" style="width:100%; ">
+                <div class="heading mt-0 container-fluid w-100">
+                  <div class="subheading container-fluid w-100" style="margin-left: 10px;">
+                    <h3 class="text-black mt-0 m-0 p-2">Kindred</h3>
+                  </div>
+                  <div class="subheading text-dark">
+                    <a routerLink="user/resturants">
+                    <h5 class="ml-auto text-black m-0 p-2">View All</h5>
+                    </a>
+                  </div>
+                </div>
+                <div class="hotel">
+                  <div class="container-fluid w-100 m-2" style="flex:1;">
+                    <a href="/offer">
+                    <img src="../../../assets/images/hotelbook.jpg" alt="" class="w-100 h-100 pic1">
+                    <div class=" content text-center w-100">
+                      <p class="text-center text-white mt-2">Puppy Bar <br> HSR Layout
+                      </p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="container-fluid w-100 m-2" style="flex:1;">
+                    <a href="/offer">
+                    <img src="../../../assets/images/hotelbook.jpg" alt="" class="w-100 h-100 pic1">
+                    <div class="content text-center w-100">
+                      <p class="text-center text-white mt-2">Marries Bar <br> HSR Layout
+                      </p>
+                    </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="hotel">
+                  <div class="container-fluid w-100 p-2" style="flex:1;">
+                    <a href="/offer">
+                    <img src="../../../assets/images/bigsale.jpg" alt="" class="w-100 h-100 pic1">
+                    </a>
+                  </div>
+                  <div class="container-fluid w-100 p-2" style="flex:1;">
+                    <a href="/offer">
+                    <img src="../../../assets/images/bigsale.jpg" alt="" class="w-100 h-100 pic1">
+                    </a>
+                  </div>
+                </div>
+              </mat-card>
+            </div>
+          </div>
+        </div>
+        <br />
+      </mat-tab>
+      <mat-tab label="Photos">
+        <br />
+        <div class="button-row">
+          <!---------------------------------------------------------------------------------------------------------->
+          <div class="row col-lg-12">
+            <div class="main col-md-8" style="background-color:whitesmoke;top:10%">
+              <div #rr *ngIf="samesizeoption" class="photo h-100 w-50 p-2">
+                <ngx-image-display [sameSize]="samesizeConfig" [imageEffect]="hovereffect" [images]="imagesp"
+                  [displayconfig]="displayconfig" (onImageSelected)="logImage($event)"></ngx-image-display>
+              </div>
+              <div #rr *ngIf="samesizeoption" class="photo h-100 w-50 p-2">
+                <ngx-image-display [sameSize]="samesizeConfig" [imageEffect]="hovereffect" [images]="imagesp2"
+                  [displayconfig]="displayconfig" (onImageSelected)="logImage($event)"></ngx-image-display>
+              </div>
+              <br>
+            </div>
+            <div class="main col-md-8" style="background-color:whitesmoke;top:10%">
+              <div #rr *ngIf="samesizeoption" class="photo h-100 w-50 p-2">
+                <ngx-image-display [sameSize]="samesizeConfig" [imageEffect]="hovereffect" [images]="imagesp2"
+                  [displayconfig]="displayconfig" (onImageSelected)="logImage($event)"></ngx-image-display>
+              </div>
+              <div #rr *ngIf="samesizeoption" class="photo h-100 w-50 p-2">
+                <ngx-image-display [sameSize]="samesizeConfig" [imageEffect]="hovereffect" [images]="imagesp"
+                  [displayconfig]="displayconfig" (onImageSelected)="logImage($event)"></ngx-image-display>
+              </div>
+            </div>
+            <div class="kinderedp submain ml-auto col-md-4 ">
+              <mat-card class=" m-0 mt-0" style="width:100%; ">
+                <div class="heading mt-0 container-fluid w-100">
+                  <div class="subheading container-fluid w-100" style="margin-left: 10px;">
+                    <h3 class="text-black mt-0 m-0 p-2">Kindred</h3>
+                  </div>
+                  <div class="subheading text-dark">
+                    <a href="user/resturants">
+                    <h5 class="ml-auto text-black m-0 p-2">View All</h5>
+                  </a>
+                  </div>
+                </div>
+                <div class="hotel">
+                  <div class="container-fluid w-100 m-2" style="flex:1;">
+                    <a href="/offer">
+                    <img src="../../../assets/images/hotelbook.jpg" alt="" class="w-100 h-100 pic1">
+                    <div class=" content text-center w-100">
+                      <p class="text-center text-white mt-2 ">Puppy Bar <br> HSR Layout
+                      </p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="container-fluid w-100 m-2" style="flex:1;">
+                    <a href="/offer">
+                    <img src="../../../assets/images/hotelbook.jpg" alt="" class="w-100 h-100 pic1">
+                    <div class=" content text-center w-100">
+                      <p class="text-center text-white mt-2">Marries Bar <br> HSR Layout
+                      </p>
+                    </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="hotel">
+                  <div class="container-fluid w-100 p-2" style="flex:1;">
+                    <a href="/offer">
+                    <img src="../../../assets/images/bigsale.jpg" alt="" class="w-100 h-100 pic1">
+                    </a>
+                  </div>
+                  <div class="container-fluid w-100 p-2" style="flex:1;">
+                    <a href="/offer">
+                    <img src="../../../assets/images/bigsale.jpg" alt="" class="w-100 h-100 pic1">
+                    </a>
+                  </div>
+                </div>
+              </mat-card>
+            </div>
+          </div>
+          <!---------------------------------------------------------------------------------------------------------------->
+
+        </div>
+        <br />
+      </mat-tab>
+      <mat-tab label="Menu">
+        <br />
+        <div class="button-row">
+          <!---------------------------------------------------------------------------------------------------------->
+
+          <div class="row col-lg-12">
+            <div class="main col-md-8" style="background-color:whitesmoke;top:10%">
+              <div #rr *ngIf="samesizeoption" class="photo h-100 w-50 p-2">
+                <ngx-image-display [sameSize]="samesizeConfig" [imageEffect]="hovereffect" [images]="images"
+                  [displayconfig]="displayconfig" (onImageSelected)="logImage($event)"></ngx-image-display>
+              </div>
+              <div #rr *ngIf="samesizeoption" class="photo h-100 w-50 p-2">
+                <ngx-image-display [sameSize]="samesizeConfig" [imageEffect]="hovereffect" [images]="images2"
+                  [displayconfig]="displayconfig" (onImageSelected)="logImage($event)"></ngx-image-display>
+              </div>
+            </div>
+            <div class="kinderedm submain ml-auto col-md-4 ">
+              <mat-card class=" m-0 mt-0" style="width:100%; ">
+                <div class="heading mt-0 container-fluid w-100">
+                  <div class="subheading container-fluid w-100" style="margin-left: 10px;">
+                    <h3 class="text-black mt-0 m-0 p-2">Kindred</h3>
+                  </div>
+                  <div class="subheading text-dark">
+                    <a href="/user/resturants">
+                    <h5 class="ml-auto text-black m-0 p-2">View All</h5>
+                    </a>
+                  </div>
+                </div>
+                <div class="hotel">
+                  <div class="container-fluid w-100 m-2" style="flex:1;">
+                    <a href="/offer">
+                    <img src="../../../assets/images/hotelbook.jpg" alt="" class="w-100 h-100 pic1">
+                    <div class=" content text-center w-100">
+                      <p class="text-center text-white mt-2 ">Puppy Bar <br> HSR Layout
+                      </p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="container-fluid w-100 m-2" style="flex:1;">
+                    <a href="/offer">
+                    <img src="../../../assets/images/hotelbook.jpg" alt="" class="w-100 h-100 pic1">
+                    <div class=" content text-center w-100">
+                      <p class="text-center text-white mt-2">Marries Bar <br> HSR Layout
+                      </p>
+                    </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="hotel">
+                  <div class="container-fluid w-100 p-2" style="flex:1;">
+                    <a href="/offer">
+                    <img src="../../../assets/images/bigsale.jpg" alt="" class="w-100 h-100 pic1">
+                    </a>
+                  </div>
+                  <div class="container-fluid w-100 p-2" style="flex:1;">
+                    <a href="">
+                    <img src="../../../assets/images/bigsale.jpg" alt="" class="w-100 h-100 pic1">
+                    </a>
+                  </div>
+                </div>
+              </mat-card>
+            </div>
+          </div>
+          <!---------------------------------------------------------------------------------------------------------------->
+        </div>
+        <br />
+      </mat-tab>
+    </mat-tab-group>
+  </section>
+</div>
+
+<app-user-footer></app-user-footer>

@@ -1,0 +1,296 @@
+.example-small-box {
+  height: 100px;
+  width: 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: visible;
+  }
+  .example-large-box{
+    height: 250px;
+    width: 150px;
+  }
+
+  .example-large1-box{
+    height: 200px;
+    width: 140px;
+  }
+.mt-2{
+  margin-top: -2em !important;
+}
+.example-column-box{
+  height: 80px;
+  width: 80px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: visible;   
+}
+.ml-4{
+  margin-left: -1.5em !important;
+}
+.mt-3 {
+  margin-top: 1rem !important;
+  margin-left: 10px;
+}
+.example-extra-box{
+  height: 120px;
+  width: 120px;
+}
+.example-popular-box{
+  height: 60px;
+  width: 60px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: visible;
+}
+.font-weight-light{
+  font-size: 12px;
+}
+.example-icon-box{
+  color: orange;
+  width: 30px;
+  height: 30px;
+}
+.example-small-box, .example-large-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px;
+  padding: 16px;
+  border-radius: 8px;
+}
+.example-small-box {
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.mt-5 {
+  margin-top: 9rem !important;
+}
+.mat-tab-label-active {
+  border-bottom: 5px solid black;
+}
+.example-card{
+ color: gray;
+}
+mat-tab-group{
+ width: 75%;
+}
+.example-small-box {
+  height: 100px;
+  width: 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: visible;
+  }
+
+  example-large-box{
+    height: 300px;
+    width: 100px;
+  }
+  .ml-4 {
+    margin-left: 3.5em !important;
+}
+.mt-2 {
+    margin-top: -1.5em !important;
+}
+.example-column-box{
+  height: 80px;
+  width: 80px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: visible;
+    
+}
+.mt-6{
+  margin-top: 6em !important;
+}
+.mt-3 {
+  margin-top: 1rem !important;
+  margin-left: 50px;
+}
+.example-extra-box{
+  height: 120px;
+  width: 120px;
+}
+.example-popular-box{
+  height: 80px;
+  width: 80px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: visible;
+}
+.font-weight-light{
+  font-size: 12px;
+}
+.example-icon-box{
+  color: orange;
+  width: 30px;
+  height: 30px;
+}
+.example{
+  background-color: rgb(118, 231, 243);
+}
+.mat-tab{
+    border-bottom: 3px solid orange;
+}
+
+mat-card{
+  margin: 5px;
+}
+mat-card-title{
+  font: xx-small ;
+  font-weight: bolder;
+  color: black;
+}
+mat-card-subtitle{
+  font: xx-small ;
+  font-weight: bolder;
+  color: gray;
+}
+mat-card-content{
+  font: x-small ;
+  font-weight: bolder;
+  color: black;
+  width: 107%;
+  input{
+      width: 50px;
+      font-size: x-small;
+  }
+  button{
+      color: white;
+      width: 50%;
+      height: 25px;
+      padding: 0;
+  }
+}
+mat-card-actions{
+  font: xx-small ;
+  font-weight: bolder;
+  color: gray;
+}
+mat-icon{
+  color: black;
+}
+.p-0{
+  
+  margin-left: 60px;
+  margin-top: -10px;
+}
+p{
+  font-size: xx-small;
+  padding: 0;
+  margin: 0;
+}
+h1{
+  font-size: x-small;
+  color: black;
+  padding: 0;
+  margin: 0;
+  line-height: 15px;
+}
+@media only screen and (max-width:768px){
+  mat-card-title{
+  font: x-small ;
+  font-weight: bolder;
+  color: black;
+  }
+  mat-card-subtitle{
+  font: small ;
+  color: gray;
+  }
+  .ml-4 {
+  margin-left: 2.7em !important;
+  }
+  mat-card-actions{
+  font: small ;
+  color: gray;
+  }
+  mat-card-content{
+    font-size: medium;
+      color: black;
+      width:100%;
+      input{
+        font-size: medium;
+        width: 100%;
+      }
+      button{
+          color: white;
+          height: 35px;
+          width: 100%;
+          font-size: medium;
+      }
+  }
+  .p-0{
+      margin-left: 99%;
+      margin-top: -10px;
+  }
+  mat-expansion-panel{
+    line-height: 20px;
+    mat-expansion-panel-header{
+      font-size: medium;
+      }
+    a{
+      font-size: small;
+    }
+  }
+  }
+  @media only screen and (min-width:769px){
+    mat-card-title{
+    font: x-large ;
+    font-weight: bolder;
+    color: black;
+    }
+    mat-card-subtitle{
+    font: large ;
+    color: gray;
+    }
+    .ml-4 {
+    margin-left: 2.7em !important;
+    }
+    mat-card-actions{
+    font: large ;
+    color: gray;
+    }
+    mat-card-content{
+        color: black;
+        width:100%;
+        input{
+          font-size: large;
+          width: 50%;
+        }
+        button{
+            color: white;
+            height: 35px;
+            width: 50%;
+            font-size: large;
+        }
+    }
+    .p-0{
+        margin-left: 99%;
+        margin-top: -10px;
+    }
+    mat-expansion-panel{
+      line-height: 20px;
+      mat-expansion-panel-header{
+        font-size: large;
+        }
+      a{
+        font-size: medium;
+      }
+    }
+    }
+
+.example-extra-box {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: visible;
+  }

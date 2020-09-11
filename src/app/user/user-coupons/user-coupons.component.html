@@ -1,0 +1,275 @@
+<app-header-main></app-header-main>
+<div fxFlex='row' fxLayout='row wrap' fxLayoutAlign='space-evenly start' class="margin">
+  <div fxFlex='row' fxLayout='row wrap' fxLayoutAlign='space-evenly start'>
+    <div fxFlex='30'>
+    <mat-card *ngFor='let card of cards' class="card">
+      <mat-card-title>{{card.title}}</mat-card-title>
+      <mat-card-subtitle>{{card.sub}}</mat-card-subtitle>
+      <mat-card-content style="border: 2px dashed orange;">
+          <input matInput type="text" value="{{card.code}}" #userinput style="border: none;">
+          <button mat-raised-button (click)="copyInputMessage(userinput)"
+              style="background-color: orange;">Copy</button>
+      </mat-card-content>
+      <button mat-mini-fab class="p-0" style="background-color:white;">
+          <mat-icon aria-hidden="false" aria-label="Example home icon" style="color: black;">keyboard_arrow_right
+          </mat-icon>
+      </button>
+      <mat-card-actions>
+          Valid till {{card.date}}
+      </mat-card-actions>
+  </mat-card>
+    <h3 style="color: orange">Categories</h3>
+    <mat-nav-list>
+      <mat-expansion-panel *ngFor="let value of avengers" [expanded]='avengers'>
+        <mat-expansion-panel-header>
+          {{value.naming}}
+        </mat-expansion-panel-header>
+        <a mat-list-item>
+          <div fxFlex='100' fxLayout='row wrap'>
+            <div fxLayout="row" fxLayoutAlign="start start" >{{value.name}}</div>
+            <div fxLayout="row" fxLayoutAlign="end center" >({{value.num}})</div>
+        </div>
+      </a>
+        <a mat-list-item>
+          <div fxFlex='100' fxLayout='row wrap'>
+            <div fxLayout="row" fxLayoutAlign="start start" >{{value.name1}}</div>
+            <div fxLayout="row" fxLayoutAlign="end center" >   ({{value.num1}})</div>
+        </div>
+      </a>
+        <a mat-list-item>
+          <div fxFlex='100' fxLayout='row wrap'>
+            <div fxLayout="row" fxLayoutAlign="start start" >{{value.name2}}</div>
+            <div fxLayout="row" fxLayoutAlign="end center" >   ({{value.num2}})</div>
+        </div>
+       </a>
+        <a mat-list-item>
+          <div fxFlex='100' fxLayout='row wrap' >
+            <div fxLayout="row" fxLayoutAlign="start start" >{{value.name3}}</div>
+            <div fxLayout="row" fxLayoutAlign="end center" >   ({{value.num3}})</div>
+        </div>
+         </a>
+        <a mat-list-item>
+          <div fxFlex='100' fxLayout='row wrap' >
+            <div fxLayout="row" fxLayoutAlign="start start" > {{value.name4}}</div>
+            <div fxLayout="row" fxLayoutAlign="end center" >   ({{value.num4}})</div>
+        </div>
+        </a>
+      </mat-expansion-panel>
+    </mat-nav-list>
+</div>
+<div fxFlex='10'>
+</div>
+<div fxFlex='60'>
+    <mat-card fxLayout='row wrap' fxLayoutGap = '10px' fxLayoutAlign='space-evenly start'>
+        <mat-card-title fxFlex='row'>
+          <div fxFlex='row'>
+            <span  fxLayout="row" fxLayoutAlign="start start" >Coupons</span>
+          </div>
+        </mat-card-title>
+        <div fxFlex= '100' fxLayout='row wrap' fxLayoutGap='20px' fxLayoutAlign='space-evenly start' class="mt-6">
+          <mat-card fxFlex=''fxLayout='row wrap' class="example mt-6">
+              <mat-card fxFlex='row' class="example-small-box mt-5" [ngStyle]="{'background-image': 'url(' + beer + ')'}">
+               
+              </mat-card>
+              <a  href="offer" class="link">
+              <button class="mt-2 ml-4" mat-raised-button > Best Beer</button>
+            </a>
+               <div fxFlex='row' class="mt-4" fxLayoutAign='center center'>
+                 <p class="text-light font-weight-bold m-0">300 Super Cash Back</p> <br>
+                <p class="text-light font-weight-bold m-0">on Best Beer</p>
+              </div>
+             </mat-card>  
+             <mat-card fxFlex=''fxLayout='row wrap' class="example mt-6">
+              <mat-card fxFlex='row' class="example-small-box mt-5" [ngStyle]="{'background-image': 'url(' + beer + ')'}">
+               
+              </mat-card>
+              <a  href="offer" class="link">
+              <button class="mt-2 ml-4" mat-raised-button > Best Beer</button>
+            </a>
+               <div fxFlex='row' class="mt-4" fxLayoutAign='center center'>
+                 <p class="text-light font-weight-bold m-0">300 Super Cash Back</p> <br>
+                <p class="text-light font-weight-bold m-0">on Best Beer</p>
+              </div>
+             </mat-card> 
+             <mat-card fxFlex=''fxLayout='row wrap' class="example mt-6">
+              <mat-card fxFlex='row' class="example-small-box mt-5" [ngStyle]="{'background-image': 'url(' + beer + ')'}">
+               
+              </mat-card>
+              <a  href="offer" class="link">
+              <button class="mt-2 ml-4" mat-raised-button > Best Beer</button>
+            </a>
+               <div fxFlex='row' class="mt-4" fxLayoutAign='center center'>
+                 <p class="text-light font-weight-bold m-0">300 Super Cash Back</p> <br>
+                <p class="text-light font-weight-bold m-0">on Best Beer</p>
+              </div>
+             </mat-card>       
+        <mat-card fxFlex=''fxLayout='row wrap' class="example mt-6">
+          <mat-card fxFlex='row' class="example-small-box mt-5" [ngStyle]="{'background-image': 'url(' + beer + ')'}">
+            
+          </mat-card>
+          <a  href="offer" class="link">
+            <button class="mt-2 ml-4" mat-raised-button > Best Beer</button>
+          </a>
+          <div fxFlex='row' class="mt-4" fxLayoutAign='center center'>
+              <p class="text-light font-weight-bold m-0">300 Super Cash Back</p> <br>
+             <p class="text-light font-weight-bold m-0">on Best Beer</p>
+           </div>
+         </mat-card>
+        </div>
+        <div fxFlex= '100' fxLayout='row wrap' fxLayoutGap='20px' fxLayoutAlign='space-evenly start' class="mt-6">
+          <mat-card fxFlex=''fxLayout='row wrap' class="example mt-6">
+            <mat-card fxFlex='row' class="example-small-box mt-5" [ngStyle]="{'background-image': 'url(' + hostels + ')'}">
+              
+            </mat-card>
+            <a  href="offer" class="link">
+              <button class="mt-2 ml-4" mat-raised-button fxLayoutAlign='center center'> Hostels</button>
+            </a>
+                <div fxFlex='row' class="mt-4" fxLayoutAign='center center'>
+                    <p class="text-light font-weight-bold m-0">300 Super Cash Back</p> <br>
+                   <p class="text-light font-weight-bold m-0">on Best Beer</p>
+                 </div>
+          </mat-card>
+        <mat-card fxFlex=''fxLayout='row wrap' class="example mt-6">
+          <mat-card fxFlex='row' class="example-small-box mt-5" [ngStyle]="{'background-image': 'url(' + hostels + ')'}">
+            
+          </mat-card>
+          <a  href="offer" class="link">
+            <button class="mt-2 ml-4" mat-raised-button fxLayoutAlign='center center'> Hostels</button>
+          </a>
+              <div fxFlex='row' class="mt-4" fxLayoutAign='center center'>
+                  <p class="text-light font-weight-bold m-0">300 Super Cash Back</p> <br>
+                 <p class="text-light font-weight-bold m-0">on Best Beer</p>
+               </div>
+        </mat-card>
+        <mat-card fxFlex=''fxLayout='row wrap' class="example mt-6">
+          <mat-card fxFlex='row' class="example-small-box mt-5" [ngStyle]="{'background-image': 'url(' + hostels + ')'}">
+            
+          </mat-card>
+          <a  href="offer" class="link">
+            <button class="mt-2 ml-4" mat-raised-button fxLayoutAlign='center center'> Hostels</button>
+          </a>
+              <div fxFlex='row' class="mt-4" fxLayoutAign='center center'>
+                  <p class="text-light font-weight-bold m-0">300 Super Cash Back</p> <br>
+                 <p class="text-light font-weight-bold m-0">on Best Beer</p>
+               </div>
+        </mat-card>
+        <mat-card fxFlex=''fxLayout='row wrap' class="example mt-6">
+          <mat-card fxFlex='row' class="example-small-box mt-5" [ngStyle]="{'background-image': 'url(' + hostels + ')'}">
+            
+          </mat-card>
+          <a  href="offer" class="link">
+            <button class="mt-2 ml-4" mat-raised-button fxLayoutAlign='center center'> Hostels</button>
+          </a>
+              <div fxFlex='row' class="mt-4" fxLayoutAign='center center'>
+                  <p class="text-light font-weight-bold m-0">300 Super Cash Back</p> <br>
+                 <p class="text-light font-weight-bold m-0">on Best Beer</p>
+               </div>
+        </mat-card>
+        </div>
+        <div fxFlex= '100' fxLayout='row wrap' fxLayoutGap='20px' fxLayoutAlign='space-evenly start' class="mt-6">
+          <mat-card fxFlex=''fxLayout='row wrap' class="example mt-6">
+            <mat-card fxFlex='row' class="example-small-box mt-5" [ngStyle]="{'background-image': 'url(' + beer + ')'}">
+              
+            </mat-card>
+            <a  href="offer" class="link">
+              <button class="mt-2 ml-4" mat-raised-button > Best Beer</button>
+            </a>
+            <div fxFlex='row' class="mt-4" fxLayoutAign='center center'>
+                <p class="text-light font-weight-bold m-0">300 Super Cash Back</p> <br>
+               <p class="text-light font-weight-bold m-0">on Best Beer</p>
+             </div>
+           </mat-card>
+             <mat-card fxFlex=''fxLayout='row wrap' class="example mt-6">
+              <mat-card fxFlex='row' class="example-small-box mt-5" [ngStyle]="{'background-image': 'url(' + beer + ')'}">
+                
+              </mat-card>
+              <a  href="offer" class="link">
+                <button class="mt-2 ml-4" mat-raised-button > Best Beer</button>
+              </a>
+              <div fxFlex='row' class="mt-4" fxLayoutAign='center center'>
+                  <p class="text-light font-weight-bold m-0">300 Super Cash Back</p> <br>
+                 <p class="text-light font-weight-bold m-0">on Best Beer</p>
+               </div>
+             </mat-card>
+        <mat-card fxFlex=''fxLayout='row wrap' class="example mt-6">
+          <mat-card fxFlex='row' class="example-small-box mt-5" [ngStyle]="{'background-image': 'url(' + beer + ')'}">
+            
+          </mat-card>
+          <a  href="offer" class="link">
+            <button class="mt-2 ml-4" mat-raised-button > Best Beer</button>
+          </a>
+          <div fxFlex='row' class="mt-4" fxLayoutAign='center center'>
+              <p class="text-light font-weight-bold m-0">300 Super Cash Back</p> <br>
+             <p class="text-light font-weight-bold m-0">on Best Beer</p>
+           </div>
+         </mat-card>
+      
+         <mat-card fxFlex=''fxLayout='row wrap' class="example mt-6">
+          <mat-card fxFlex='row' class="example-small-box mt-5" [ngStyle]="{'background-image': 'url(' + beer + ')'}">
+            
+          </mat-card>
+          <a  href="offer" class="link">
+            <button class="mt-2 ml-4" mat-raised-button > Best Beer</button>
+          </a>
+          <div fxFlex='row' class="mt-4" fxLayoutAign='center center'>
+              <p class="text-light font-weight-bold m-0">300 Super Cash Back</p> <br>
+             <p class="text-light font-weight-bold m-0">on Best Beer</p>
+           </div>
+         </mat-card>
+        </div>
+        <div fxFlex= '100' fxLayout='row wrap' fxLayoutGap='20px' fxLayoutAlign='space-evenly start' class="mt-6">
+        <mat-card fxFlex=''fxLayout='row wrap' class="example mt-6">
+          <mat-card fxFlex='row' class="example-small-box mt-5" [ngStyle]="{'background-image': 'url(' + hostels + ')'}">
+            
+          </mat-card>
+          <a  href="offer" class="link">
+            <button class="mt-2 ml-4" mat-raised-button fxLayoutAlign='center center'> Hostels</button>
+          </a>
+              <div fxFlex='row' class="mt-4" fxLayoutAign='center center'>
+                  <p class="text-light font-weight-bold m-0">300 Super Cash Back</p> <br>
+                 <p class="text-light font-weight-bold m-0">on Best Beer</p>
+               </div>
+        </mat-card>
+        <mat-card fxFlex=''fxLayout='row wrap' class="example mt-6">
+          <mat-card fxFlex='row' class="example-small-box mt-5" [ngStyle]="{'background-image': 'url(' + hostels + ')'}">
+            
+          </mat-card>
+          <a  href="offer" class="link">
+            <button class="mt-2 ml-4" mat-raised-button fxLayoutAlign='center center'> Hostels</button>
+          </a>
+              <div fxFlex='row' class="mt-4" fxLayoutAign='center center'>
+                  <p class="text-light font-weight-bold m-0">300 Super Cash Back</p> <br>
+                 <p class="text-light font-weight-bold m-0">on Best Beer</p>
+               </div>
+        </mat-card>
+
+        <mat-card fxFlex=''fxLayout='row wrap' class="example mt-6">
+          <mat-card fxFlex='row' class="example-small-box mt-5" [ngStyle]="{'background-image': 'url(' + hostels + ')'}">
+            
+          </mat-card>
+          <a  href="offer" class="link">
+            <button class="mt-2 ml-4" mat-raised-button fxLayoutAlign='center center'> Hostels</button>
+          </a>
+              <div fxFlex='row' class="mt-4" fxLayoutAign='center center'>
+                  <p class="text-light font-weight-bold m-0">300 Super Cash Back</p> <br>
+                 <p class="text-light font-weight-bold m-0">on Best Beer</p>
+               </div>
+        </mat-card>
+  
+        <mat-card fxFlex=''fxLayout='row wrap' class="example mt-6">
+          <mat-card fxFlex='row' class="example-small-box mt-5" [ngStyle]="{'background-image': 'url(' + hostels + ')'}">
+            
+          </mat-card>
+          <a  href="offer" class="link">
+            <button class="mt-2 ml-4" mat-raised-button fxLayoutAlign='center center'> Hostels</button>
+          </a>
+              <div fxFlex='row' class="mt-4" fxLayoutAign='center center'>
+                  <p class="text-light font-weight-bold m-0">300 Super Cash Back</p> <br>
+                 <p class="text-light font-weight-bold m-0">on Best Beer</p>
+               </div>
+        </mat-card>
+        </div>
+    </mat-card>
+    </div>
+  
+  </div>

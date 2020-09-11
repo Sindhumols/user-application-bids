@@ -1,0 +1,140 @@
+<div class="wrapper"   
+ [@expand]
+ *ngIf="show5" flflex="100" fxLayout="row Wrap"  fxLayoutAlign="start center">
+ <section style="width:100%">
+<mat-tab-group >
+  <mat-tab label="Raised Buttons">
+     <ng-template mat-tab-label style="width:100%;padding-bottom: 0px;">
+      Videos
+      </ng-template>
+<br />
+    <div class="button-row mt-2">
+  <!---------------------------------------------Videos------------------------------------------------------------------->
+ <div class="p-4" style="margin-top: -9%;margin-right: 0px;">
+    <owl-carousel [options]="video1Carousel" [items]="video11"
+      [carouselClasses]="['plan-slider owl-carousel owl-theme']">
+      <div class="item" *ngFor="let vid of video11">
+          <h5 class="text-dark videoh5" style="margin-top: 85px;margin-left: 0px;">{{vid.head}}</h5>
+          <a routerLink="/{{vid.link}}">
+          <!-- </a>
+          <a routerLink="/{{vid.link}}"> -->
+          <div  class="col-md-3">
+          <video class="video-fluid z-depth-1 video"  loop controls >
+            <source  src={{vid.video1}} type="video/mp4"/>
+        </video>
+      
+        </div>
+        </a>
+      </div>
+    </owl-carousel>
+    <a routerLink="/user/recent-videos">
+    <div class="p-4 p-50 text-center">
+     <button mat-flat-button class="m-0 mb-2 w-90 rounded-pill px-5 h-40 ">More</button>
+      </div> 
+    </a>
+</div>
+
+ <!------------------------------------------------Blogs---------------------------------------------------------------->
+
+</div>
+    <br />
+  </mat-tab>
+  <mat-tab label="Blogs">
+    <br />
+    <div class="button-row mt-2">
+        <!---------------------------------------------------------------------------------------------------------->
+        <div class="p-4" style="margin-top: -9%;margin-right: 0px;">
+              <owl-carousel [options]="blogCarousel" [items]="blog11"
+                [carouselClasses]="['plan-slider owl-carousel owl-theme']">
+                <div class="item" *ngFor="let blogg of blog11">
+                  <a routerLink="/user/blog">
+                    <div  class="col-md-3">
+                      <mat-card class="main">
+                        <div class="img1">
+                        <img  class="" src={{blogg.img11}}>
+                      </div>
+                      <div class="img1">
+                        <p class="">{{blogg.blog}}</p>
+                        </div>
+                        </mat-card>
+                      <br>
+                     </div>
+                  </a>
+                </div>
+              </owl-carousel>
+              <a routerLink="/user/blogpage">
+                <div class="p-4 p-50 text-center">
+                  <a href=""><button mat-flat-button class="m-0 mb-2 w-90 rounded-pill px-5 h-40 " >More</button></a>
+                  </div>
+                </a>
+          </div>
+    </div>
+    <br />
+  </mat-tab>
+  <mat-tab label="Live Videos">
+    <br />
+    <div class="button-row mt-2">
+        <div class="p-4" style="margin-top: -9%;margin-right: 0px;">
+          <owl-carousel [options]="livevideoCarousel" [items]="livevideo11"
+            [carouselClasses]="['plan-slider owl-carousel owl-theme']">
+            <div class="item" *ngFor="let vidd of livevideo11">
+              <a routerLink="/{{vidd.route}}">
+                <img class="img2" src={{vidd.img}} style="border-radius:50%;width:10%;height:8%;margin-top:104px;">
+            <h5 class="text-dark" style="margin-left: 10%;margin-top:-23px;">{{vidd.head1}}</h5>
+                <!-- <h5 class="text-dark" style="margin-top: 85px;margin-left: 0px;">{{vid.head}}</h5><mat-icon style ="margin-left:255px; margin-top:-24px;">{{vid.icon}}</mat-icon> -->
+                <div  class="col-md-3">
+                <video class="video-fluid z-depth-1 video1"  loop controls >
+                  <source  src={{vidd.livevideo1}} type="video/mp4" />
+              </video>
+              <p class="text-white clr">{{vidd.live}}</p>
+              </div>
+              </a>
+            </div>
+          </owl-carousel>
+          <a routerLink="/user/recent-livevideo">
+          <div class="p-4 p-50 text-center">
+            <button mat-flat-button class="m-0 mb-2 w-90 rounded-pill px-5 h-40 " >More</button>
+            </div>
+            </a>
+      </div>
+    <!---------------------------------------------------------------------------------------------------------------->
+  
+    </div>
+    <br />
+  </mat-tab>
+
+
+  <mat-tab label="News Feed">
+    <br />
+    <div class="button-row mt-2">
+        <!---------------------------------------------NewsFeed------------------------------------------------------------->
+            <div class="p-4" style="margin-top: -9%;margin-right: 0px;">
+              <owl-carousel [options]="blogCarousel" [items]="newsfeed11"
+                [carouselClasses]="['plan-slider owl-carousel owl-theme']">
+                <div class="item" *ngFor="let news of newsfeed11">
+                  <a routerLink="/user/news">
+                    <div class="col-md-3">
+                      <mat-card class="" style="width:350px;">    
+                        <img  class="blog" src={{news.img12}} style="height:251px">
+                      <p class="container" [class.show]="show12">
+                        {{news.blog1}}
+                      </p>
+                        </mat-card>
+                      <br>
+                      </div>
+                  </a>
+                </div>
+              </owl-carousel>
+              <a routerLink="/user/newspage">
+              <div class="p-4 p-50 text-center">
+                <a href=""><button mat-flat-button class="m-0 mb-2 w-90 rounded-pill px-5 h-40 " >More</button></a>
+                </div>
+              </a>
+          </div>
+    <!---------------------------------------------------------------------------------------------------------------->
+    </div>
+    <br />
+  </mat-tab>
+</mat-tab-group>
+</section>
+</div>

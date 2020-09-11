@@ -1,0 +1,357 @@
+<div>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" routerLink="/main">
+        <img [src]="logo" style="width:60%" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link">
+              <button class="btn btn-light">
+                <span>
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                </span> {{location}}</button>
+              </a>
+          </li>
+        </ul>
+        <form class="form-inline mt-md-0">
+          <input class="form-control mr-sm-2 place" type="text" placeholder="Search" aria-label="Search" (keyup)="applyFilter($event)">
+          <button class="btn btn-light my-2 my-sm-0" type="submit">
+            <i class="fa fa-search"  aria-hidden="true"></i>
+            </button>
+        </form>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active" *ngIf='header' routerLinkActive="active" (mouseover)="dispatchPlanmenuTrigger.openMenu()" (mouseout)="$event.stopPropagation();createPlanmenuTrigger.closeMenu();dispatchPlanmenuTrigger.openMenu();">
+            <a class="nav-link" #dispatchPlanmenuTrigger="matMenuTrigger" [matMenuTriggerFor]="dispatchPlan">  
+               <i class="fa fa-bell-o mt-1 fa-1" aria-hidden="true"></i>
+            </a>
+            <mat-menu #dispatchPlan="matMenu" class="mt-2">
+              <div [class.show]="show">
+                <button mat-menu-item [routerLink]="['/offer']">
+                  <mat-card class="example-card1">
+                    <mat-card-header>
+                      <div style="float: right;">
+                      <button mat-flat-button>view</button>
+                      </div>
+                      <div mat-card-avatar class="example-header-image"></div>
+                      <mat-card-title>New Offers</mat-card-title>
+                    </mat-card-header>
+                  </mat-card>
+                </button>
+                <button mat-menu-item [routerLink]="['/offer']">
+                  <mat-card class="example-card1">
+                    <mat-card-header>
+                      <div style="float: right;">
+                      <button mat-flat-button>view</button>
+                      </div>
+                      <div mat-card-avatar class="example-header-image"></div>
+                      <mat-card-title>New Offers</mat-card-title>
+                    </mat-card-header>
+                  </mat-card>
+                </button>
+                <button mat-menu-item [routerLink]="['/offer']">
+                  <mat-card class="example-card1">
+                    <mat-card-header>
+                      <div style="float: right;">
+                      <button mat-flat-button>view</button>
+                      </div>
+                      <div mat-card-avatar class="example-header-image"></div>
+                      <mat-card-title>New Offers</mat-card-title>
+                    </mat-card-header>
+                  </mat-card>
+                </button>
+                <ng-container *ngIf="showMore1">
+                <button mat-menu-item [routerLink]="['/offer']">
+                  <mat-card class="example-card1">
+                    <mat-card-header>
+                      <div style="float: right;">
+                      <button mat-flat-button>view</button>
+                      </div>
+                      <div mat-card-avatar class="example-header-image"></div>
+                      <mat-card-title>New Offers</mat-card-title>
+                    </mat-card-header>
+                  </mat-card>
+                </button>
+                <button mat-menu-item [routerLink]="['/offer']">
+                  <mat-card class="example-card1">
+                    <mat-card-header>
+                      <div style="float: right;">
+                      <button mat-flat-button>view</button>
+                      </div>
+                      <div mat-card-avatar class="example-header-image"></div>
+                      <mat-card-title>New Offers</mat-card-title>
+                    </mat-card-header>
+                  </mat-card>
+                </button>
+                <button mat-menu-item [routerLink]="['/offer']">
+                  <mat-card class="example-card1">
+                    <mat-card-header>
+                      <div style="float: right;">
+                      <button mat-flat-button>view</button>
+                      </div>
+                      <div mat-card-avatar class="example-header-image"></div>
+                      <mat-card-title>New Offers</mat-card-title>
+                    </mat-card-header>
+                  </mat-card>
+                </button>
+                <button mat-menu-item [routerLink]="['/offer']">
+                  <mat-card class="example-card1">
+                    <mat-card-header>
+                      <div style="float: right;">
+                      <button mat-flat-button>view</button>
+                      </div>
+                      <div mat-card-avatar class="example-header-image"></div>
+                      <mat-card-title>New Offers</mat-card-title>
+                    </mat-card-header>
+                  </mat-card>
+                </button>
+                <button mat-menu-item [routerLink]="['/offer']">
+                  <mat-card class="example-card1">
+                    <mat-card-header>
+                      <div style="float: right;">
+                      <button mat-flat-button>view</button>
+                      </div>
+                      <div mat-card-avatar class="example-header-image"></div>
+                      <mat-card-title>New Offers</mat-card-title>
+                    </mat-card-header>
+                  </mat-card>
+                </button>
+                </ng-container>
+                </div>
+              <button  mat-menu-item (click)="showMore1 = !showMore1">Show {{showMore1 ?'less':'More' }}</button>
+            </mat-menu>
+          </li>
+          <li class="nav-item active ">
+            <a class="nav-link" routerLink="/user/coupons"> <button class="btn btn-light dropdown-toggle" type="button"
+                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Coupons
+              </button>
+            </a>
+          </li>
+          <li *ngIf='header' class="nav-item active " routerLinkActive="active" (mouseover)="createPlanmenuTrigger.openMenu()" (mouseout)="$event.stopPropagation();dispatchPlanmenuTrigger.closeMenu();createPlanmenuTrigger.openMenu();" >
+            <a class="nav-link" #createPlanmenuTrigger="matMenuTrigger" [matMenuTriggerFor]="createPlan">
+               <span>
+                 <i class="fa fa-user-o fa-1" aria-hidden="true"></i>
+                </span> 
+                <span class="user"> User</span>
+            </a>
+            <mat-menu #createPlan="matMenu" class='mt-2 '>
+              <button mat-menu-item [routerLink]="['/user/profile']">My Account</button>
+              <button mat-menu-item (click)='signout()' [routerLink]="['/user/main']">Signout</button>
+              <button mat-menu-item [routerLink]="['/subscription']">Subscription</button>
+            </mat-menu>
+          </li>
+            <li class="nav-item active" *ngIf='mainheader'>
+              <button (click) = "show1()" class="btn text-white mt-2" style="background-color: transparent;">
+                <i class="fa fa-user-o fa-1" aria-hidden="true"></i>
+                <span class="login" style="font-size: 20px;"> Login</span>
+              </button>
+            </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+</div>
+
+<div [style.display]="showModal ? 'block' : 'none'" class="modal" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content text-white" style=" background: linear-gradient(90deg, #d4c7c7,rgb(193, 108, 193), rgb(210, 102, 102),rgb(114, 177, 114));">
+      <div class="modal-header">
+        <button type="button" class="btn text-white" data-dismiss="modal" (click) = "hide()" style="margin-left: 90%;">
+          <mat-icon>clear</mat-icon>
+        </button>
+      </div>
+      <div class="modal-body">
+        <mat-tab-group class="text-white">
+          <mat-tab label="Login" id="login" class="text-white">
+            <div class="row" *ngIf='mainlogin'>
+              <div class="container">
+            <form #f="ngForm" (ngSubmit)="login(f)">
+              <div class="form-group text-white">
+                <label for="email">Email</label>
+                <input required pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" ngModel name="email" id="email" #email="ngModel" 
+                   type="email" class="form-control" placeholder="Enter Email" />
+                <div class="alert alert-danger" *ngIf="email.touched && !email.valid">
+                  <div *ngIf="email.errors.required"> Email is required.</div>
+                  <div *ngIf="email.errors.pattern">Invalid Email.</div>
+                </div>
+              </div>
+              <div class="form-group">
+                  <label>Password</label>
+                  <input required minlength="6" maxlength="15"  ngModel name="password" id="password" #password="ngModel" pattern="^[a-zA-Z0-9]{6,15}$"
+                  [type]="hide3 ? 'password' : 'text'"  class="form-control" placeholder="Enter password" />
+                  <mat-icon style="cursor: pointer;" matSuffix (click)="hide3 = !hide3">{{hide3 ? 'visibility_off' : 'visibility'}}</mat-icon>
+                <div class="alert alert-danger" *ngIf="password.touched && !password.valid">
+                  <div *ngIf="password.errors.required"> Password is required.</div>
+                  <div *ngIf="password.errors.minlength">Password must contain 6 characters</div>
+                  <div *ngIf="password.errors.maxlength">Password should not exceeds 15 charcaters</div>
+                  <div *ngIf="password.errors.pattern">Invalid password</div>
+                </div>
+                </div>
+            <div class="form-group">
+              <label>
+                <input type="checkbox" name="remember"> Remember me
+              </label>
+            </div>
+            <div class="text-center text-white">
+              <!-- <a href='/main'> -->
+            <button class="form-control text-white border border-white" mat-fab [disabled]="!f.valid">
+               Login
+            </button>
+          <!-- </a> -->
+          </div>
+          </form>
+              </div>
+        </div>
+           <div class="row"  *ngIf='mainlogin'>
+            <div class="col-lg-12 col-md-12 text-center">
+              <p class="text-white" (click)='forgotpage()' style="cursor: pointer;"> Forgot Password</p>
+                <!-- <p class="text-secondary">Create New One</p>
+                <br> -->
+                <!-- <a href="#signin" style="color: tomato;">
+                  Sign In Now
+                </a> -->
+            </div>
+          </div> 
+          <div class="row" *ngIf='forgetpassword'>
+            <div class="container">
+              <form #f1="ngForm" (ngSubmit)="forgetSubmit(g)">
+                <div class="form-group text-white">
+                  <label> Email</label>
+                  <input required  ngModel name="email" id="email" #email="ngModel" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                  (change)="log(email)" type="email" class="form-control" placeholder="Enter Email" />
+                <div class="alert alert-danger" *ngIf="email.touched && !email.valid">
+                  <div *ngIf="email.errors.required"> Email is required.</div>
+                  <div *ngIf="email.errors.pattern">Invalid Email.</div>
+                </div>
+                </div>
+                <div class="text-center">
+                <button class="form-control border border-white" mat-fab [disabled]="!f1.valid">
+                  <mat-icon>
+                    <span class="material-icons text-white font-weight-bold">
+                      arrow_right_alt
+                      </span>
+                  </mat-icon>
+                </button>
+              </div>
+              </form>
+            </div>
+          </div>
+          <div class="row" *ngIf='message'>
+            <div class="container text-center text-white">
+              Link to reset your Password has <br>
+              been Send to your Email
+              <br>
+              <div class="text-center">
+                <a href='/user/main' style="cursor: pointer;">
+              <button style="cursor: pointer;" class="form-control border border-white" mat-fab [disabled]="!loginForm.valid">
+                <mat-icon>
+                  <span class="material-icons text-white font-weight-bold">
+                    arrow_right_alt
+                    </span>
+                </mat-icon>
+              </button>
+            </a>
+            </div>
+            </div>
+          </div>
+          </mat-tab>
+          <mat-tab label="Signup" id="signin">
+            <div class="row">
+            <div class="container">
+                <form [formGroup]="loginForm"  (ngSubmit)="Submit()">
+                  
+                  <div class="form-group">
+                    <input class="form-control" formControlName="username" type="text" placeholder="User Name" />
+                  </div>
+                  <div class="error-messages">
+                    <ng-container *ngFor="let error of error_messages.username">
+                      <div class="error-message" *ngIf="loginForm.get('username').hasError(error.type) && (loginForm.get('username').dirty || loginForm.get('username').touched)">
+                        {{ error.message }}
+                      </div>
+                    </ng-container>
+                  </div>
+
+                  <div class="form-group">
+                    <input class="form-control" formControlName="email" type="email" placeholder="Email Id"  />
+                  </div>
+                  <div class="error-messages">
+                    <ng-container *ngFor="let error of error_messages.email">
+                      <div class="error-message" *ngIf="loginForm.get('email').hasError(error.type) && 
+                (loginForm.get('email').dirty || loginForm.get('email').touched)">
+                        {{ error.message }}
+                      </div>
+                    </ng-container>
+                  </div>
+            
+                  <div class="form-group">
+                    <input class="form-control" formControlName="tel" type="tel" placeholder="Mobile" />
+                  </div>
+                  <div class="error-messages">
+                    <ng-container *ngFor="let error of error_messages.tel">
+                      <div class="error-message" *ngIf="loginForm.get('tel').hasError(error.type) && 
+                (loginForm.get('tel').dirty || loginForm.get('tel').touched)">
+                        {{ error.message }}
+                      </div>
+                    </ng-container>
+                  </div>
+            
+                  <div class="form-group">
+                    <input class="form-control" formControlName="password" [type]="hide2 ? 'password' : 'text'"  placeholder="Password" />
+                    <mat-icon style="cursor: pointer;" matSuffix (click)="hide2 = !hide2">{{hide2 ? 'visibility_off' : 'visibility'}}</mat-icon>
+                  </div>
+                  <div class="error-messages">
+                    <ng-container *ngFor="let error of error_messages.password">
+                      <div class="error-message" *ngIf="loginForm.get('password').hasError(error.type) && (loginForm.get('password').dirty || loginForm.get('password').touched)">
+                        {{ error.message }}
+                      </div>
+                    </ng-container>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" formControlName="confirmpassword" [type]="hide1 ? 'password' : 'text'"  placeholder="Confirm Password" />
+                    <mat-icon style="cursor: pointer;" matSuffix (click)="hide1 = !hide1">{{hide1 ? 'visibility_off' : 'visibility'}}</mat-icon>
+                  </div>
+                  <div class="error-messages">
+                    <ng-container *ngFor="let error of error_messages.confirmpassword">
+                      <div class="error-message" *ngIf="loginForm.get('confirmpassword').hasError(error.type) && (loginForm.get('confirmpassword').dirty || loginForm.get('confirmpassword').touched)">
+                        {{ error.message }}
+                      </div>
+                    </ng-container>
+                  </div>
+                  <div class="text-center">
+                  <button class="form-control border border-white" mat-fab [disabled]="!loginForm.valid">
+                    <mat-icon>
+                      <span class="material-icons text-white font-weight-bold">
+                        arrow_right_alt
+                        </span>
+                    </mat-icon>
+                  </button>
+                </div>
+                </form>
+            </div>
+          </div>
+            <div class="row">
+              <div class="col-lg-6 col-md-12 text-center">
+                 <a href="">
+                  <i class="fa fa-facebook-square" aria-hidden="true" style="color: blue; "></i>
+                  </a>
+              </div>
+              <div class="col-lg-6 col-md-12 text-center">
+                <a href="">
+                  <i class="fa fa-google-plus-square" aria-hidden="true" style="color: red; "></i>
+                </a>
+            </div>
+            </div> 
+          </mat-tab> 
+        </mat-tab-group>
+      </div>
+    </div>
+  </div>
+  </div>

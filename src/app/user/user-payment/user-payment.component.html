@@ -1,0 +1,22 @@
+<app-header-main></app-header-main>
+<mat-card class="payment">
+    <h1 class="paymentmethod text-white"> Payment </h1>
+    <mat-divider style="color: thistle;"></mat-divider>
+    <mat-card class="razorpay text-white" layout="row" layout-align="center center">
+        <h1 class="paymentmethod2 text-white"> Razorpay </h1>
+        <h5 class="paymentmethod2 text-white"> 599 INR will be charged for 6 months premium offers </h5>
+        <mat-card class="razorpay2 text-white" layout="row" layout-align="center center">
+            <h4 class="paymentmethod3 text-dark"> Name :</h4>
+            <h5 class="paymentmethod3 text-dark"> Number : </h5>
+            <h5 class="paymentmethod3 text-dark"> Date : </h5>
+            <h5 class="paymentmethod3 text-dark"> Total : </h5>
+            <mat-divider style="color: black;"></mat-divider>
+            <h1 class="paymentmethod2 text-white"> 599 INR</h1>
+        </mat-card>
+        <a routerLink="/subscription"><button type="submit" mat-flat-button
+                class="back m-0 mb-2  text-white w-90 rounded-pill px-5 h-40 mt-5 ">Back</button></a>
+        <a routerLink="/user/main">
+            <button type="submit" mat-flat-button
+                class="paynow text-dark m-0 mb-2 w-90 rounded-pill px-5 h-40 mt-5 ">Paynow</button></a>
+    </mat-card>
+</mat-card>

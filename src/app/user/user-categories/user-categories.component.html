@@ -1,0 +1,129 @@
+<app-header-main></app-header-main>
+<div fxFlex='row' fxLayout='row wrap' fxLayoutAlign='space-evenly start'  class="mt-5">
+  <div fxFlex='30'>
+    <mat-card *ngFor='let card of cards' class="card mt-5">
+      <mat-card-title>{{card.title}}</mat-card-title>
+      <mat-card-subtitle>{{card.sub}}</mat-card-subtitle>
+      <mat-card-content style="border: 2px dashed orange;">
+          <input matInput type="text" value="{{card.code}}" #userinput style="border: none;">
+          <button mat-raised-button (click)="copyInputMessage(userinput)"
+              style="background-color: orange;">Copy</button>
+      </mat-card-content>
+      <button mat-mini-fab class="p-0" style="background-color:white;">
+        <a href="user/coupons">
+          <mat-icon aria-hidden="false" aria-label="Example home icon" style="color: black;">
+            keyboard_arrow_right
+          </mat-icon>
+        </a>
+      </button>
+      <mat-card-actions>
+          Valid till {{card.date}}
+      </mat-card-actions>
+  </mat-card>
+  </div>
+  <div fxFlex='10'>
+  </div>
+  <div fxFlex='60'>
+  <mat-card fxLayout='row wrap' fxLayoutGap = '5px' fxLayoutAlign='space-evenly start'>
+    <div fxFlex= '100' fxLayout='row wrap' fxLayoutGap='3px' fxLayoutAlign='space-evenly start'>
+     <a href="/user/resturants">
+      <mat-card class="example-small-box" [ngStyle]="{'background-image': 'url(' + resturants + ')'}"></mat-card>
+     </a>
+     
+     <a href="/user/pubs">
+      <mat-card class="example-small-box" [ngStyle]="{'background-image': 'url(' + pubs + ')'}"></mat-card>
+     </a> 
+     
+     <a href="/user/carspa">
+      <mat-card class="example-small-box" [ngStyle]="{'background-image': 'url(' + carspa + ')'}"></mat-card>
+     </a> 
+     <a href="/user/medical">
+      <mat-card class="example-small-box" [ngStyle]="{'background-image': 'url(' + medical + ')'}"></mat-card>
+     </a>
+
+    </div>
+   
+   <div fxFlex= '100' fxLayout='row wrap' fxLayoutGap='3px' fxLayoutAlign='space-evenly start'>
+   
+   <a href="/user/groceries">
+    <mat-card class="example-small-box" [ngStyle]="{'background-image': 'url(' + groceries + ')'}"></mat-card>
+   </a>   
+   
+   <a href="/user/gym">
+    <mat-card class="example-small-box" [ngStyle]="{'background-image': 'url(' + gym + ')'}"></mat-card>
+   </a> 
+   
+   <a href="/user/fashion">
+    <mat-card class="example-small-box" [ngStyle]="{'background-image': 'url(' + fashion + ')'}"></mat-card>
+   </a> 
+   <a href="/user/coaching">
+    <mat-card class="example-small-box" [ngStyle]="{'background-image': 'url(' + coaching + ')'}"></mat-card>
+   </a>
+    
+    </div>
+   
+  <div fxFlex= '100' fxLayout='row wrap' fxLayoutGap='3px' fxLayoutAlign='space-evenly start'>
+   
+   <a href="/user/park">
+    <mat-card class="example-small-box" [ngStyle]="{'background-image': 'url(' + park + ')'}"></mat-card>
+   </a>  
+   
+   <a href="/user/gift">
+    <mat-card class="example-small-box" [ngStyle]="{'background-image': 'url(' + gift + ')'}"></mat-card>
+   </a> 
+   
+   <a href="/user/entertainment">
+    <mat-card class="example-small-box" [ngStyle]="{'background-image': 'url(' + entertainment + ')'}"></mat-card>
+   </a> 
+   <a href="/user/stationary">
+    <mat-card class="example-small-box" [ngStyle]="{'background-image': 'url(' + stationary + ')'}"></mat-card>
+   </a>
+    </div>
+   
+   <div fxFlex= '100' fxLayout='row wrap' fxLayoutGap='3px' fxLayoutAlign='space-evenly start'>
+   <a href="/user/game">
+    <mat-card class="example-small-box" [ngStyle]="{'background-image': 'url(' + game + ')'}"></mat-card>
+   </a>  
+   <a href="/user/electricals">
+    <mat-card class="example-small-box" [ngStyle]="{'background-image': 'url(' + electricals + ')'}"></mat-card>
+   </a> 
+   <a href="/user/toy">
+    <mat-card class="example-small-box" [ngStyle]="{'background-image': 'url(' + toy + ')'}"></mat-card>
+   </a> 
+   <a href="/user/cowrk">
+    <mat-card class="example-small-box" [ngStyle]="{'background-image': 'url(' + cowrk + ')'}"></mat-card>
+   </a>
+    </div>
+   
+ <div fxFlex= '100' fxLayout='row wrap' fxLayoutGap='3px' fxLayoutAlign='space-evenly start'>
+   <a href="/user/optical">
+    <mat-card class="example-small-box" [ngStyle]="{'background-image': 'url(' + optical + ')'}"></mat-card>
+   </a>   
+   <a href="/user/home_decors">
+    <mat-card class="example-small-box" [ngStyle]="{'background-image': 'url(' + homedecor + ')'}"></mat-card>
+   </a> 
+   <a href="/user/spa">
+    <mat-card class="example-small-box" [ngStyle]="{'background-image': 'url(' + spa + ')'}"></mat-card> 
+   </a> 
+   <a href="/user/jewellery">
+    <mat-card class="example-small-box" [ngStyle]="{'background-image': 'url(' + jewellery + ')'}"></mat-card>
+   </a>
+    </div>
+    <div fxFlex= '100' fxLayout='row wrap' fxLayoutGap='3px' fxLayoutAlign='space-evenly start'>
+     <a href="/user/footer">
+      <mat-card class="example-small-box" [ngStyle]="{'background-image': 'url(' + footwear + ')'}"></mat-card>
+     </a> 
+     <a href="/user/tour">
+      <mat-card class="example-small-box" [ngStyle]="{'background-image': 'url(' + tour + ')'}"></mat-card>
+     </a>
+     <a href="user/cosmetics">
+      <mat-card class="example-small-box" [ngStyle]="{'background-image': 'url(' + cosmetics + ')'}"></mat-card>
+     </a>
+     <a href="/user/resorts">
+      <mat-card class="example-small-box" [ngStyle]="{'background-image': 'url(' + resorts + ')'}"></mat-card>
+     </a>
+    </div>
+  </mat-card>
+  </div>
+  <app-user-footer></app-user-footer>
+</div>

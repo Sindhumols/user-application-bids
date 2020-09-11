@@ -1,0 +1,284 @@
+<app-header-main></app-header-main>
+<div fxFlex='row' fxLayout='row wrap' fxLayoutAlign='space-evenly start' class="card mt-5">
+  <div fxFlex='30'>
+    <mat-card *ngFor='let card of cards' >
+      <mat-card-title>{{card.title}}</mat-card-title>
+      <mat-card-subtitle>{{card.sub}}</mat-card-subtitle>
+      <mat-card-content style="border: 2px dashed orange;">
+          <input matInput type="text" value="{{card.code}}" #userinput style="border: none;">
+          <button mat-raised-button (click)="copyInputMessage(userinput)"
+              style="background-color: orange;">Copy</button>
+      </mat-card-content>
+      <button mat-mini-fab class="p-0" style="background-color:white;">
+        <a href="user/coupons">
+          <mat-icon aria-hidden="false" aria-label="Example home icon" style="color: black;">
+            keyboard_arrow_right
+          </mat-icon>
+        </a>
+      </button>
+      <mat-card-actions>
+          Valid till {{card.date}}
+      </mat-card-actions>
+  </mat-card>
+  </div>
+  <div fxFlex='10'>
+  </div>
+  <div fxFlex='60'>
+  <mat-card fxLayout='row wrap' fxLayoutGap = '10px' fxLayoutAlign='space-evenly start'>
+      <mat-card-title fxFlex='row'>
+        <div fxFlex='row'>
+          <span  fxLayout="row" fxLayoutAlign="start start" >Popular Brands</span>
+        </div>
+      </mat-card-title>
+    <div fxFlex= '100' fxLayout='row wrap' fxLayoutGap='20px' fxLayoutAlign='space-evenly start'>
+      <a href="offer" class="example-large-box">
+      <mat-card fxFlex=''fxLayout='row wrap' >
+          <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + texas + ')'}">
+            <div class="rounded-circle ml-auto p-0" fxLayoutAlign='end start' (click) = fav()>
+              <img src="../../../../assets/images/users/outline_grade_black_18dp.png" alt="" *ngIf='fav_before'>
+            </div>
+            <div class="rounded-circle ml-auto p-0" fxLayoutAlign='end start' (click) = fav1()>
+              <mat-icon aria-hidden="false" aria-label="Example home icon" class="example-icon-box" *ngIf='fav_after' >grade</mat-icon>
+            </div>
+          </mat-card>
+          <button class="mt-2 ml-4" mat-fab style="background-color: orange;"> Logo</button>
+           <div fxFlex='row' class="mt-4">
+             <p class="text-dark font-weight-bold m-0">Texas BBQ</p> <br>
+             <p class="text-secondary m-0 font-weight-light">Contidential, cafe.</p>
+            </div>
+         </mat-card>
+        </a>
+        <a href="offer" class="example-large-box">
+    <mat-card fxFlex=''fxLayout='row wrap'>
+      <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + texas + ')'}">
+        <div class="rounded-circle ml-auto p-0" fxLayoutAlign='end start' (click) = fav2()>
+          <img src="../../../../assets/images/users/outline_grade_black_18dp.png" alt="" *ngIf='fav_before1'>
+        </div>
+        <div class="rounded-circle ml-auto p-0" fxLayoutAlign='end start' (click) = fav3()>
+          <mat-icon aria-hidden="false" aria-label="Example home icon" class="example-icon-box" *ngIf='fav_after1' >grade</mat-icon>
+        </div>
+      </mat-card>
+          <button class="mt-2 ml-4" mat-fab style="background-color: orange;"> Logo</button>
+           <div fxFlex='row' class="mt-4">
+             <p class="text-dark font-weight-bold m-0">Texas BBQ</p> <br>
+             <p class="text-secondary m-0 font-weight-light">Contidential, cafe.</p>
+            </div>
+    </mat-card>
+        </a>
+
+        <a href="offer"  class="example-large-box">
+    <mat-card fxFlex=''fxLayout='row wrap'>
+      <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + texas + ')'}">
+        <div class="rounded-circle ml-auto p-0" fxLayoutAlign='end start' (click) = fav4()>
+          <img src="../../../../assets/images/users/outline_grade_black_18dp.png" alt="" *ngIf='fav_before2'>
+        </div>
+        <div class="rounded-circle ml-auto p-0" fxLayoutAlign='end start' (click) = fav5()>
+          <mat-icon aria-hidden="false" aria-label="Example home icon" class="example-icon-box" *ngIf='fav_after2' >grade</mat-icon>
+        </div>
+      </mat-card>
+          <button class="mt-2 ml-4" mat-fab style="background-color: orange;"> Logo</button>
+           <div fxFlex='row' class="mt-4">
+             <p class="text-dark font-weight-bold m-0">Texas BBQ</p> <br>
+             <p class="text-secondary m-0 font-weight-light">Contidential, cafe.</p>
+            </div>
+     </mat-card>
+        </a>
+
+        <a href="offer" class="example-large-box">
+     <mat-card fxFlex=''fxLayout='row wrap' >
+      <mat-card fxFlex='row' class="example-small-box" [ngStyle]="{'background-image': 'url(' + texas + ')'}">
+        <div class="rounded-circle ml-auto p-0" fxLayoutAlign='end start' (click) = fav6()>
+          <img src="../../../../assets/images/users/outline_grade_black_18dp.png" alt="" *ngIf='fav_before3'>
+        </div>
+        <div class="rounded-circle ml-auto p-0" fxLayoutAlign='end start' (click) = fav7()>
+          <mat-icon aria-hidden="false" aria-label="Example home icon" class="example-icon-box" *ngIf='fav_after3' >grade</mat-icon>
+        </div>
+      </mat-card>
+          <button class="mt-2 ml-4" mat-fab style="background-color: orange;"> Logo</button>
+           <div fxFlex='row' class="mt-4">
+             <p class="text-dark font-weight-bold m-0">Texas BBQ</p> <br>
+             <p class="text-secondary m-0 font-weight-light">Contidential, cafe.</p>
+            </div>
+     </mat-card>
+        </a>
+    </div>
+
+    <div fxFlex= '100' fxLayout='row wrap' fxLayoutGap='20px' fxLayoutAlign='space-evenly center' class="mt-5">
+        <a href="offer">
+        <mat-card fxFlex='row' fxLayout='row wrap'>
+            <mat-card class="example-extra-box" [ngStyle]="{'background-image': 'url(' + john + ')'}"></mat-card>
+            <button class="mt-4" mat-fab style="background-color: orange;     margin-left: -7%;
+            "> Logo</button>
+             <div class="mt-3">
+               <p class="text-dark font-weight-bold m-0">Texas BBQ</p> <br>
+              <p class="text-secondary m-0">Contidential, cafe.</p>
+            </div>
+            <div class="rounded-circle ml-auto p-0" fxLayoutAlign='end start' (click) = fav22()>
+              <img src="../../../../assets/images/users/outline_grade_black_18dp.png" alt="" *ngIf='fav_before11'>
+            </div>
+            <div class="rounded-circle ml-auto p-0" fxLayoutAlign='end start' (click) = fav23()>
+              <mat-icon aria-hidden="false" aria-label="Example home icon" class="example-icon-box" *ngIf='fav_after11' >grade</mat-icon>
+            </div>
+           </mat-card>
+        </a>
+    
+        <a href="offer">
+           <mat-card fxFlex='row' fxLayout='row wrap'>
+            <mat-card class="example-extra-box" [ngStyle]="{'background-image': 'url(' + john + ')'}"></mat-card>
+            <button class="mt-4" mat-fab style="background-color: orange;     margin-left: -7%;
+            "> Logo</button>
+             <div class="mt-3">
+               <p class="text-dark font-weight-bold m-0">Texas BBQ</p> <br>
+              <p class="text-secondary m-0">Contidential, cafe.</p>
+            </div>
+            <div class="rounded-circle ml-auto p-0" fxLayoutAlign='end start' (click) = fav24()>
+              <img src="../../../../assets/images/users/outline_grade_black_18dp.png" alt="" *ngIf='fav_before12'>
+            </div>
+            <div class="rounded-circle ml-auto p-0" fxLayoutAlign='end start' (click) = fav25()>
+              <mat-icon aria-hidden="false" aria-label="Example home icon" class="example-icon-box" *ngIf='fav_after12' >grade</mat-icon>
+            </div>
+           </mat-card>
+        </a>
+      </div>
+      
+  <!-- <div fxFlex= '100' fxLayout='row wrap' fxLayoutGap='20px' fxLayoutAlign='space-evenly start'>
+    <a href="offer">
+    <mat-card fxFlex='row' fxLayout='row wrap'>
+        <mat-card class="example-column-box" [ngStyle]="{'background-image': 'url(' + john + ')'}"></mat-card>
+        <button class="mt-4 logo" mat-mini-fab style="background-color: orange;" > Logo</button>
+         <div class="mt-3">
+           <p class="text-dark font-weight-bold m-0">Texas BBQ</p> <br>
+           <p class="text-secondary m-0 font-weight-light">Contidential, cafe.</p>
+          </div>
+       </mat-card>
+    </a>
+
+    <a href="offer">
+  <mat-card fxFlex='row' fxLayout='row wrap'>
+    <mat-card class="example-column-box" [ngStyle]="{'background-image': 'url(' + john + ')'}"></mat-card>
+        <button class="mt-4 logo" mat-mini-fab style="background-color: orange;"> Logo</button>
+         <div class="mt-3">
+           <p class="text-dark font-weight-bold m-0">Texas BBQ</p> <br>
+           <p class="text-secondary m-0 font-weight-light">Contidential, cafe.</p>
+          </div>
+  </mat-card>
+    </a>
+
+    <a href="offer">
+  <mat-card fxFlex='row' fxLayout='row wrap'>
+    <mat-card class="example-column-box" [ngStyle]="{'background-image': 'url(' + john + ')'}"></mat-card>
+        <button class="mt-4 logo" mat-mini-fab style="background-color: orange;"> Logo</button>
+         <div class="mt-3">
+           <p class="text-dark font-weight-bold m-0">Texas BBQ</p> <br>
+           <p class="text-secondary m-0 font-weight-light">Contidential, cafe.</p>
+          </div>
+   </mat-card>
+    </a>
+  </div> -->
+
+<div fxFlex= '100' fxLayout='row wrap' fxLayoutGap='20px' fxLayoutAlign='space-evenly start'>
+  <a href="offer" class="example-large1-box">
+  <mat-card fxFlex=''fxLayout='row wrap' >
+      <mat-card fxFlex='row' class="example-popular-box" [ngStyle]="{'background-image': 'url(' + texas + ')'}">
+        <div class="rounded-circle ml-auto p-0" fxLayoutAlign='end start' (click) = fav10()>
+          <img src="../../../../assets/images/users/outline_grade_black_18dp.png" alt="" *ngIf='fav_before5'>
+        </div>
+        <div class="rounded-circle ml-auto p-0" fxLayoutAlign='end start' (click) = fav11()>
+          <mat-icon aria-hidden="false" aria-label="Example home icon" class="example-icon-box" *ngIf='fav_after5' >grade</mat-icon>
+        </div>
+      </mat-card>
+       <div fxFlex='row' class="">
+         <p class="text-dark font-weight-bold m-0">Texas BBQ</p> <br>
+        <p class="text-secondary m-0 font-weight-light">Contidential, cafe.</p>
+      </div>
+     </mat-card>
+  </a>
+
+  <a href="offer"  class="example-large1-box">
+<mat-card fxFlex=''fxLayout='row wrap'>
+  <mat-card fxFlex='row' class="example-popular-box" [ngStyle]="{'background-image': 'url(' + texas + ')'}">
+    <div class="rounded-circle ml-auto p-0" fxLayoutAlign='end start' (click) = fav12()>
+      <img src="../../../../assets/images/users/outline_grade_black_18dp.png" alt="" *ngIf='fav_before6'>
+    </div>
+    <div class="rounded-circle ml-auto p-0" fxLayoutAlign='end start' (click) = fav13()>
+      <mat-icon aria-hidden="false" aria-label="Example home icon" class="example-icon-box" *ngIf='fav_after6' >grade</mat-icon>
+    </div>
+  </mat-card>
+       <div fxFlex='row' class="">
+         <p class="text-dark font-weight-bold m-0">Texas BBQ</p> <br>
+        <p class="text-secondary m-0 font-weight-light">Contidential, cafe.</p>
+      </div>
+</mat-card>
+  </a>
+
+  <a href="offer" class="example-large1-box">
+<mat-card fxFlex=''fxLayout='row wrap' >
+  <mat-card fxFlex='row' class="example-popular-box" [ngStyle]="{'background-image': 'url(' + texas + ')'}">
+    <div class="rounded-circle ml-auto p-0" fxLayoutAlign='end start' (click) = fav14()>
+      <img src="../../../../assets/images/users/outline_grade_black_18dp.png" alt="" *ngIf='fav_before7'>
+    </div>
+    <div class="rounded-circle ml-auto p-0" fxLayoutAlign='end start' (click) = fav15()>
+      <mat-icon aria-hidden="false" aria-label="Example home icon" class="example-icon-box" *ngIf='fav_after7' >grade</mat-icon>
+    </div>
+  </mat-card>
+       <div fxFlex='row' class="">
+         <p class="text-dark font-weight-bold m-0">Texas BBQ</p> <br>
+        <p class="text-secondary m-0 font-weight-light">Contidential, cafe.</p>
+      </div>
+ </mat-card>
+  </a>
+
+  <a href="offer"  class="example-large1-box">
+ <mat-card fxFlex=''fxLayout='row wrap'>
+  <mat-card fxFlex='row' class="example-popular-box" [ngStyle]="{'background-image': 'url(' + texas + ')'}">
+    <div class="rounded-circle ml-auto p-0" fxLayoutAlign='end start' (click) = fav16()>
+      <img src="../../../../assets/images/users/outline_grade_black_18dp.png" alt="" *ngIf='fav_before8'>
+    </div>
+    <div class="rounded-circle ml-auto p-0" fxLayoutAlign='end start' (click) = fav17()>
+      <mat-icon aria-hidden="false" aria-label="Example home icon" class="example-icon-box" *ngIf='fav_after8' >grade</mat-icon>
+    </div>
+  </mat-card>
+       <div fxFlex='row' class="">
+         <p class="text-dark font-weight-bold m-0">Texas BBQ</p> <br>
+        <p class="text-secondary m-0 font-weight-light">Contidential, cafe.</p>
+      </div>
+ </mat-card>
+  </a>
+
+  <a href="offer" class="example-large1-box">
+ <mat-card fxFlex=''fxLayout='row wrap' >
+  <mat-card fxFlex='row' class="example-popular-box" [ngStyle]="{'background-image': 'url(' + texas + ')'}">
+    <div class="rounded-circle ml-auto p-0" fxLayoutAlign='end start' (click) = fav18()>
+      <img src="../../../../assets/images/users/outline_grade_black_18dp.png" alt="" *ngIf='fav_before9'>
+    </div>
+    <div class="rounded-circle ml-auto p-0" fxLayoutAlign='end start' (click) = fav19()>
+      <mat-icon aria-hidden="false" aria-label="Example home icon" class="example-icon-box" *ngIf='fav_after9' >grade</mat-icon>
+    </div>
+  </mat-card>
+   <div fxFlex='row' class="">
+     <p class="text-dark font-weight-bold m-0">Texas BBQ</p> <br>
+    <p class="text-secondary m-0 font-weight-light">Contidential, cafe.</p>
+  </div>
+ </mat-card>
+  </a>
+  <!-- <a href="offer" class="example-large1-box">
+    <mat-card fxFlex=''fxLayout='row wrap' >
+     <mat-card fxFlex='row' class="example-popular-box" [ngStyle]="{'background-image': 'url(' + texas + ')'}">
+       <div class="rounded-circle ml-auto p-0" fxLayoutAlign='end start' (click) = fav18()>
+         <img src="../../../../assets/images/users/outline_grade_black_18dp.png" alt="" *ngIf='fav_before9'>
+       </div>
+       <div class="rounded-circle ml-auto p-0" fxLayoutAlign='end start' (click) = fav19()>
+         <mat-icon aria-hidden="false" aria-label="Example home icon" class="example-icon-box" *ngIf='fav_after9' >grade</mat-icon>
+       </div>
+     </mat-card>
+      <div fxFlex='row' class="">
+        <p class="text-dark font-weight-bold m-0">Texas BBQ</p> <br>
+       <p class="text-secondary m-0 font-weight-light">Contidential, cafe.</p>
+     </div>
+    </mat-card>
+     </a> -->
+</div>
+  </mat-card>
+  </div>
+  <app-user-footer></app-user-footer>
+</div>

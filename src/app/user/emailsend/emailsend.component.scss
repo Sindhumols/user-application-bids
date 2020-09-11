@@ -1,0 +1,47 @@
+   /*-----------laptop/Desktop-----------------------*/
+   @media(min-width:1024px){
+    .mat-card{
+        width: 761px;
+        background: whitesmoke;
+        height: 224px;
+        height: 224px;
+        top: 230px;
+        border-radius: 3%;
+    }
+}
+@media(min-width:1024px) and (max-width:1096px){
+    .mat-card{
+        left: 120px;
+    }
+}
+/*-------------tablet/Ipad----------------------*/
+@media(min-width:769px) and (max-width:1023px){
+    .mat-card{
+        width: 761px;
+    background: whitesmoke;
+    height: 224px;
+     top: 230px;
+    left: -117px;
+    margin-left: 120px;
+    border-radius: 3%;
+    }
+}
+/*--------------mobile----------------------*/
+@media(max-width:768px){
+    .mat-card{
+        background: whitesmoke;
+        height: 224px;
+        top: 232px;
+        width: 761px;
+        border-radius: 3%;
+    }
+}
+@media(max-width:468px){
+    .mat-card{
+        background: whitesmoke;
+        height: 224px;
+        top: 160px;
+        width: 464px;
+        border-radius: 3%;
+    }
+}

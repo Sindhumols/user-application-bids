@@ -1,0 +1,130 @@
+<div class="main"
+  style=" background: linear-gradient(90deg, black,rgb(70, 11, 70), rgb(102, 32, 32),rgb(50, 80, 50)); height: 150%;">
+<app-header-main></app-header-main>
+<div class="main"
+  style=" background: linear-gradient(90deg, black,rgb(70, 11, 70), rgb(102, 32, 32),rgb(50, 80, 50)); height: 100%;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 mt-5 p-2 profile">
+        <h1>Profile</h1>
+      </div>
+    </div>
+      <div class="row rounded">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 p-2"
+          style="display: flex; background: linear-gradient(90deg, black,rgb(70, 11, 70), rgb(102, 32, 32),rgb(50, 80, 50)); height: 100%;">
+          <div style="flex:1" class="p-2">
+            <mat-card>
+                <img height="100px" width="100px" [src]="_d.bypassSecurityTrustUrl(imgsrc)">
+                <div style="position: absolute; visibility: hidden;">
+                <input type="file" (change)="fileChange($event)" #filePicker >
+                </div>
+                <div style="position: relative; cursor: pointer;">
+                <mat-icon class="edit" (click)="filePicker.click()" >edit</mat-icon>
+              </div>
+              </mat-card>
+            <mat-card>
+              <div class="btn">{{this.tel}}</div>
+              <button class="btn w-100 mt-2" (click)="show1()">Edit Profile</button>
+            </mat-card>
+          </div>
+          <div style="flex: 1;" class="p-2">
+            <p class='text-white'>Profile Information</p>
+            <form (ngSubmit)="informSubmit(form)" [formGroup]="form" *ngIf='informform'>
+              <div class="form-group">
+                <label class='text-white'>Full Name</label>
+                <input type="text" [(ngModel)]="fullmane" formControlName="fullmane" class="form-control">
+              </div>
+              <div class="form-group">
+                <label class='text-white'>Where do you Live</label>
+                <input type="text" [(ngModel)]="live" formControlName="live" class="form-control">
+              </div>
+              <button type="submit" class="btn btn-primary" [disabled]="!form.valid"> Save </button>
+            </form>
+            <div *ngIf='informdata' class="text-white">
+              <div *ngFor="let user of userDetails; let i = index" >
+                <li class="rounded-pill btn text-white p-2 m-2" style="box-shadow: silver; border: 2px solid silver;">{{user.fullmane}}</li>
+                <br>
+                <li class="rounded-pill btn text-white p-2 m-2" style="box-shadow: silver; border: 2px solid silver;">{{user.live}}</li>
+              </div>
+            </div>
+            <form [formGroup]="loginForm"  (ngSubmit)="Submit()" *ngIf='editForm'>
+              <div class="form-group">
+                <input class="form-control" formControlName="tel" type="tel" placeholder="Mobile" />
+              </div>
+              <div class="error-messages text-white">
+                <ng-container *ngFor="let error of error_messages.tel">
+                  <div class="error-message" *ngIf="loginForm.get('tel').hasError(error.type) && 
+            (loginForm.get('tel').dirty || loginForm.get('tel').touched)">
+                    {{ error.message }}
+                  </div>
+                </ng-container>
+              </div>
+              <div class="form-group">
+                <input class="form-control" formControlName="email" type="email" placeholder="Email Id"  />
+              </div>
+              <div class="error-messages text-white">
+                <ng-container *ngFor="let error of error_messages.email">
+                  <div class="error-message" *ngIf="loginForm.get('email').hasError(error.type) && 
+            (loginForm.get('email').dirty || loginForm.get('email').touched)">
+                    {{ error.message }}
+                  </div>
+                </ng-container>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid"> Save </button>
+              </div>         
+             </form>
+            <div>
+            </div>
+            <br>
+            <form [formGroup]="passwordForm" (ngSubmit)="onPassword()" *ngIf='editForm'>
+              <label class="text-white">Change Password</label><br>
+              <div class="form-group">
+                <input class="form-control" formControlName="oldpassword" [type]="hide ? 'password' : 'text'"  placeholder="Old Password" />
+                <mat-icon style="color: white;cursor: pointer;" matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+              </div>
+              <div class="error-messages text-white">
+                <ng-container *ngFor="let err of error_message.oldpassword">
+                  <div class="error-message" *ngIf="passwordForm.get('oldpassword').hasError(err.type) && 
+                  (passwordForm.get('oldpassword').dirty || passwordForm.get('oldpassword').touched)">
+                    {{ err.message }}
+                  </div>
+                </ng-container>
+              </div>
+              <div class="form-group">
+                <input class="form-control" formControlName="newpassword" [type]="hide1 ? 'password' : 'text'"  placeholder="New Password" />
+                <mat-icon style="color: white; cursor: pointer;" matSuffix (click)="hide1 = !hide1">{{hide1 ? 'visibility_off' : 'visibility'}}</mat-icon>
+              </div>
+              <div class="error-messages text-white">
+                <ng-container *ngFor="let err of error_message.newpassword">
+                  <div class="error-message" *ngIf="passwordForm.get('newpassword').hasError(err.type) && 
+                  (passwordForm.get('newpassword').dirty || passwordForm.get('newpassword').touched)">
+                    {{ err.message }}
+                  </div>
+                </ng-container>
+              </div>
+              <div class="form-group">
+                <input class="form-control" formControlName="confirmPassword" [type]="hide2 ? 'password' : 'text'"  placeholder="Confirm Password" />
+                <mat-icon  style="color: white; cursor: pointer;" matSuffix (click)="hide2 = !hide2">{{hide2 ? 'visibility_off' : 'visibility'}}</mat-icon>
+              </div>
+              <div class="error-messages text-white">
+                <ng-container *ngFor="let err of error_message.confirmPassword">
+                  <div class="error-message" *ngIf="passwordForm.get('confirmPassword').hasError(err.type) && 
+                  (passwordForm.get('confirmPassword').dirty || passwordForm.get('confirmPassword').touched)">
+                    {{ err.message }}
+                  </div>
+                </ng-container>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary" [disabled]="!passwordForm.valid"> Save </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+
+    </div>
+  </div>
+</div>

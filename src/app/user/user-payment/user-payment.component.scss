@@ -1,0 +1,117 @@
+.paymentmethod{
+    color:white;
+    text-align: center;
+    }
+    .paymentmethod2{
+    color:black;
+    text-align: center;
+    }
+    .payment{
+    background-color: rgb(78, 7, 69);
+    margin-top: 70px;
+    
+    }
+    .paynow{
+    
+    left: 367px;
+    
+    }
+    .back{
+    left: 108px;
+    background: transparent;
+    }
+    .razorpay{
+ background: linear-gradient(90deg, black,rgb(70, 11, 70), rgb(102, 32, 32),rgb(50, 80, 50));
+  height: 150%;
+    margin-top: 70px;
+    margin-bottom: 0;
+    width: 50%;
+    margin-left: 351px;
+    }
+    .razorpay2{
+        background-color: rgba(255, 255, 255, 0.619);
+     height: 150%;
+    margin-top: 70px;
+    margin-bottom: 0;
+    width: 70%;
+    margin-left: 113px;
+    
+    }
+    @media(min-width:1024px)
+    {
+    .razorpay{
+        background: linear-gradient(90deg, black,rgb(70, 11, 70), rgb(102, 32, 32),rgb(50, 80, 50));
+        height: 150%;
+    margin-top: 70px;
+    margin-bottom: 0;
+    width: 50%;
+    margin-left: 351px;
+    }
+    .paynow{
+    
+    left: 340px;
+    
+    }
+    }
+    
+    /*---------------------Tablet/pad---------------*/
+    @media(min-width:769px)and (max-width:1023px)
+    {
+    .razorpay{
+        background: linear-gradient(90deg, black,rgb(70, 11, 70), rgb(102, 32, 32),rgb(50, 80, 50));
+        height: 150%;
+    margin-top: 70px;
+    margin-bottom: 0;
+    width: 100%;
+    margin-left: 3px;
+    }
+    }
+    
+    /*-----------------------Mobile----------------*/
+    @media(max-width:768px)
+    {
+    .razorpay{
+        background: linear-gradient(90deg, black,rgb(70, 11, 70), rgb(102, 32, 32),rgb(50, 80, 50));
+        height: 150%;
+    margin-top: 70px;
+    margin-bottom: 0;
+    width: 100%;
+    margin-left: 3px;
+    }
+    }
+    
+    @media(max-width:468px)
+    {
+    .razorpay{
+        background: linear-gradient(90deg, black,rgb(70, 11, 70), rgb(102, 32, 32),rgb(50, 80, 50));
+        height: 150%;
+    margin-top: 70px;
+    margin-bottom: 0;
+    width: 100%;
+    margin-left: 3px;
+    }
+    .payment{
+        background: linear-gradient(90deg, black,rgb(70, 11, 70), rgb(102, 32, 32),rgb(50, 80, 50));
+        height: 150%;
+    margin-top: 50px;
+    
+    
+    }
+    .paynow{
+    
+    left: 5px;
+    
+    }.back{
+    left: 0px;
+    }
+    .razorpay2{
+        background: linear-gradient(90deg, black,rgb(70, 11, 70), rgb(102, 32, 32),rgb(50, 80, 50));
+        height: 150%;
+    margin-top: 70px;
+    margin-bottom: 0;
+    width: 100%;
+    margin-left: 3px;
+    
+    }
+    }
+    

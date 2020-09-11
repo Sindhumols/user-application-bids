@@ -1,0 +1,1116 @@
+.example-small-box {
+  height: 100px;
+  width: 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: visible;
+  }
+  .example-large-box{
+    height: 250px;
+    width: 150px;
+  }
+
+  .example-large1-box{
+    height: 200px;
+    width: 140px;
+  }
+.mt-2{
+  margin-top: -2em !important;
+}
+.example-column-box{
+  height: 80px;
+  width: 80px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: visible;   
+}
+.ml-4{
+  margin-left: -1.5em !important;
+}
+.mt-3 {
+  margin-top: 1rem !important;
+  margin-left: 10px;
+}
+.example-extra-box{
+  height: 120px;
+  width: 120px;
+}
+.example-popular-box{
+  height: 60px;
+  width: 60px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: visible;
+}
+.font-weight-light{
+  font-size: 12px;
+}
+.example-icon-box{
+  color: orange;
+  width: 30px;
+  height: 30px;
+}
+.example-small-box, .example-large-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px;
+  padding: 16px;
+  border-radius: 8px;
+}
+.example-small-box {
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.mt-5 {
+  margin-top: 9rem !important;
+}
+.mat-tab-label-active {
+  border-bottom: 5px solid black;
+}
+.example-card{
+ color: gray;
+}
+mat-tab-group{
+ width: 75%;
+}
+@media only screen and (max-width: 411px) {
+  .example-small-box {
+    height: 100px;
+    width: 100px;
+  }
+  .mt-5 {
+    margin-top: 4rem !important;
+}
+.ml-4 {
+  margin-left: 0.7em !important;
+}
+.example{
+margin-top: 6em !important;
+}
+mat-card-title{
+font: x-small ;
+font-weight: bolder;
+color: black;
+}
+mat-card-subtitle{
+font: smaller ;
+color: gray;
+}
+mat-card-actions{
+font: smaller ;
+font-weight: bolder;
+color: gray;
+}
+  .p-0{
+    
+    margin-left: 60px;
+    margin-top: -10px;
+}
+h3{
+  font-size: small;
+}
+mat-expansion-panel{
+  line-height: 20px;
+  font-size: x-small;
+  a{
+    font-size: xx-small;
+    line-height: 10px;
+  }
+}
+ mat-card-content{
+  color: black;
+  font-size: smaller;
+  width: 101%;
+  input{
+    width: 45px;
+    font-size: 8px;
+  }
+ }
+}
+
+@media only screen and (min-width: 414px) {
+  .mt-5 {
+    margin-top: 9rem !important;
+}
+.ml-4 {
+  margin-left: 0.7em !important;
+}
+.example{
+margin-top: 6em !important;
+}
+mat-card-title{
+font: x-small ;
+font-weight: bolder;
+color: black;
+}
+mat-card-subtitle{
+font: smaller ;
+color: gray;
+}
+mat-card-actions{
+font: smaller ;
+font-weight: bolder;
+color: gray;
+}
+  .p-0{
+    
+    margin-left: 60px;
+    margin-top: -10px;
+}
+h3{
+  font-size: small;
+}
+mat-expansion-panel{
+  line-height: 20px;
+  font-size: x-small;
+  a{
+    font-size: xx-small;
+    line-height: 10px;
+  }
+}
+ mat-card-content{
+  color: black;
+  font-size: smaller;
+  width: 101%;
+  input{
+    width: 45px;
+    font-size: 8px;
+  }
+ }
+}
+
+ @media only screen and (max-width: 360px) {
+  .example-small-box {
+    height: 100px;
+    width: 100px;
+  }
+  .mt-5 {
+    margin-top: 4rem !important;
+}
+.ml-4 {
+  margin-left: 0.7em !important;
+}
+.example{
+margin-top: 6em !important;
+}
+mat-card-title{
+font: x-small ;
+font-weight: bolder;
+color: black;
+}
+mat-card-subtitle{
+font: smaller ;
+color: gray;
+}
+mat-card-actions{
+font: smaller ;
+font-weight: bolder;
+color: gray;
+}
+mat-card-content{
+    color: black;
+    font-size: smaller;
+    width: 121%;
+    input{
+      width: 45px;
+      font-size: 8px;
+    }
+    button{
+        color: white;
+        height: 25px;
+        padding: 0;
+    }
+}
+.p-0{
+    
+    margin-left: 45px;
+    margin-top: -10px;
+}
+h3{
+  font-size: small;
+}
+mat-expansion-panel{
+  line-height: 20px;
+  font-size: x-small;
+  a{
+    font-size: xx-small;
+    line-height: 10px;
+  }
+}
+}
+@media only screen and (max-width: 1279px) {
+  .example-small-box{
+    display: block !important;
+  }
+}
+@media only screen and (min-width: 1279px) {
+  .example-small-box{
+    display: block !important;
+  }
+}
+.example-small-box {
+  height: 100px;
+  width: 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: visible;
+  }
+
+  example-large-box{
+    height: 300px;
+    width: 100px;
+  }
+  .ml-4 {
+    margin-left: 3.5em !important;
+}
+.mt-2 {
+    margin-top: -1.5em !important;
+}
+.example-column-box{
+  height: 80px;
+  width: 80px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: visible;
+    
+}
+.mt-6{
+  margin-top: 6em !important;
+}
+.mt-3 {
+  margin-top: 1rem !important;
+  margin-left: 50px;
+}
+.example-extra-box{
+  height: 120px;
+  width: 120px;
+}
+.example-popular-box{
+  height: 80px;
+  width: 80px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: visible;
+}
+.font-weight-light{
+  font-size: 12px;
+}
+.example-icon-box{
+  color: orange;
+  width: 30px;
+  height: 30px;
+}
+.example{
+  background-color: rgb(118, 231, 243);
+}
+.mat-tab{
+    border-bottom: 3px solid orange;
+}
+
+mat-card{
+  margin: 5px;
+}
+mat-card-title{
+  font: xx-small ;
+  font-weight: bolder;
+  color: black;
+}
+mat-card-subtitle{
+  font: xx-small ;
+  font-weight: bolder;
+  color: gray;
+}
+mat-card-content{
+  font: x-small ;
+  font-weight: bolder;
+  color: black;
+  width: 107%;
+  input{
+      width: 50px;
+      font-size: x-small;
+  }
+  button{
+      color: white;
+      width: 50%;
+      height: 25px;
+      padding: 0;
+  }
+}
+mat-card-actions{
+  font: xx-small ;
+  font-weight: bolder;
+  color: gray;
+}
+mat-icon{
+  color: black;
+}
+.p-0{
+  
+  margin-left: 60px;
+  margin-top: -10px;
+}
+p{
+  font-size: xx-small;
+  padding: 0;
+  margin: 0;
+}
+h1{
+  font-size: x-small;
+  color: black;
+  padding: 0;
+  margin: 0;
+  line-height: 15px;
+}
+// @media only screen and (min-width: 375px) {
+//   mat-card-content{
+//       font: x-small ;
+//       font-weight: bolder;
+//       color: black;
+//       width: 98%;
+//       input{
+//           width: 57px;
+//           font-size: smaller;
+//       }
+//       button{
+//           color: white;
+//           height: 35px;
+//           padding: 0;
+//       }
+//   }
+//   .p-0{
+      
+//       margin-left: 75px;
+//       margin-top: -10px;
+//   }
+// }
+
+// @media (max-width: 991px){
+// h1 {
+//   font-size: small;
+// }
+// }
+// @media (max-width: 1199px){
+// h1 {
+//   font-size: medium;
+//   /* line-height: 56px; */
+// }
+// }
+// @media only screen and (min-width: 425px){
+//   mat-card-content{
+//       font: x-small ;
+//       color: black;
+//       font-weight: bolder;
+//       width: 81%;
+//       input{
+//           width: 58px;
+//           font-size: small;
+//       }
+//       button{
+//           color: white;
+//           height: 35px;
+        
+//       }
+//   }
+//   .p-0{
+      
+//       margin-left: 85px;
+//       margin-top: -10px;
+//   }
+// }
+
+
+
+//   @media only screen and (max-width:500px) and (min-width: 425px){
+//     mat-card-title{
+//     font: x-small ;
+//     font-weight: bolder;
+//     color: black;
+//     }
+//     mat-card-subtitle{
+//     font: small ;
+//     color: gray;
+//     }
+//     .ml-4 {
+//     margin-left: 2.7em !important;
+//     }
+//     mat-card-actions{
+//     font: small ;
+//     color: gray;
+//     }
+//     mat-card-content{
+//       font: x-small ;
+//       color: black;
+//       width: 64%;
+//       input{
+//         width: 48%;;
+//       }
+//       button{
+//           color: white;
+//           height: 35px;
+        
+//       }
+//   }
+//   .p-0{
+      
+//       margin-left: 100px;
+//       margin-top: -10px;
+//   }
+//     mat-expansion-panel{
+//       line-height: 20px;
+//       mat-expansion-panel-header{
+    
+//         font-size: small;
+//         }
+//       a{
+//         font-size: x-small;
+//       }
+//     }
+//     }
+//     @media only screen and (max-width:600px) and (min-width: 500px){
+//       mat-card-title{
+//       font: x-small ;
+//       font-weight: bolder;
+//       color: black;
+//       }
+//       mat-card-subtitle{
+//       font: small ;
+//       color: gray;
+//       }
+//       .ml-4 {
+//       margin-left: 2.7em !important;
+//       }
+//       mat-card-actions{
+//       font: small ;
+//       color: gray;
+//       }
+//       mat-card-content{
+//           font: x-small ;
+//           color: black;
+//           width:68%;
+//           input{
+//             width: 42%;
+//           }
+//           button{
+//               color: white;
+//               height: 35px;
+            
+//           }
+//       }
+//       .p-0{
+          
+//           margin-left: 105px;
+//           margin-top: -10px;
+//       }
+//       mat-expansion-panel{
+//         line-height: 20px;
+//         mat-expansion-panel-header{
+      
+//           font-size: medium;
+//           }
+//         a{
+//           font-size: small;
+//         }
+//       }
+//       }
+//       @media only screen and (max-width:700px) and (min-width: 600px){
+//         mat-card-title{
+//         font: x-small ;
+//         font-weight: bolder;
+//         color: black;
+//         }
+//         mat-card-subtitle{
+//         font: small ;
+//         color: gray;
+//         }
+//         .ml-4 {
+//         margin-left: 2.7em !important;
+//         }
+//         mat-card-actions{
+//         font: small ;
+//         color: gray;
+//         }
+//         mat-card-content{
+//             font: x-small ;
+//             color: black;
+//             width:100%;
+//             input{
+//               width: 45%;
+//             }
+//             button{
+//                 color: white;
+//                 height: 35px;
+              
+//             }
+//         }
+//         .p-0{
+            
+//             margin-left: 130px;
+//             margin-top: -10px;
+//         }
+//         mat-expansion-panel{
+//           line-height: 20px;
+//           mat-expansion-panel-header{
+//             font-size: medium;
+//             }
+//           a{
+//             font-size: small;
+//           }
+//         }
+//         }
+//         @media only screen and (max-width:767px) and (min-width: 700px){
+//           mat-card-title{
+//           font: x-small ;
+//           font-weight: bolder;
+//           color: black;
+//           }
+//           mat-card-subtitle{
+//           font: small ;
+//           color: gray;
+//           }
+//           .ml-4 {
+//           margin-left: 2.7em !important;
+//           }
+//           mat-card-actions{
+//           font: small ;
+//           color: gray;
+//           }
+//           mat-card-content{
+//               font: x-small ;
+//               color: black;
+//               width:100%;
+//               input{
+//                 width: 52%;
+//                 font-size: medium;
+//               }
+//               button{
+//                   color: white;
+//                   height: 35px;
+//               }
+//           }
+//           .p-0{
+//               margin-left: 140px;
+//               margin-top: -10px;
+//           }
+//           mat-expansion-panel{
+//             line-height: 20px;
+//             mat-expansion-panel-header{
+//               font-size: medium;
+//               }
+//             a{
+//               font-size: small;
+//             }
+//           }
+//           }
+  @media only screen and (max-width:768px){
+    mat-card-title{
+    font: x-small ;
+    font-weight: bolder;
+    color: black;
+    }
+    mat-card-subtitle{
+    font: small ;
+    color: gray;
+    }
+    .ml-4 {
+    margin-left: 2.7em !important;
+    }
+    mat-card-actions{
+    font: small ;
+    color: gray;
+    }
+    mat-card-content{
+      font: x-small ;
+      color: black;
+      width:100%;
+      input{
+        font-size: small;
+        width: 100%;
+      }
+      button{
+          color: white;
+          height: 35px;
+          width: 100%;
+      }
+  }
+  .p-0{
+      margin-left: 99%;
+      margin-top: -10px;
+  }
+    mat-expansion-panel{
+      line-height: 20px;
+      mat-expansion-panel-header{
+        font-size: medium;
+        }
+      a{
+        font-size: small;
+      }
+    }
+    }
+    @media only screen and (min-width: 769px){
+      mat-card-title{
+          font: large ;
+          color: black;
+          font-weight: bolder;
+      }
+      mat-card-subtitle{
+          font: x-large ;
+          font-weight: bolder;
+          color: gray;
+      }
+      mat-card-content{
+          color: black;
+          width:100%;
+          input{
+            font-size: large;
+            width: 50%;
+          }
+          button{
+              color: white;
+              height: 35px;
+              width: 50%;
+              font-size: large;
+          }
+      }
+      .p-0{
+          margin-left: 99%;
+          margin-top: -10px;
+      }
+      mat-card-actions{
+          font: large ;
+          font-weight: bolder;
+          color: gray;
+      }
+      p{
+          font-size: large;
+          padding: 0;
+          margin: 0;
+      }
+      h1{
+          font-size: large bolder;
+          color: black;
+          padding: 0;
+          margin: 0;
+          line-height: 15px;
+      }
+    }
+//     @media only screen and (min-width: 1024px){
+//       mat-card-title{
+//           font: medium ;
+//           font-weight: bolder;
+//           color: black;
+//       }
+//       mat-card-subtitle{
+//           font: small ;
+//           font-weight: bolder;
+//           color: gray;
+//       }
+//       mat-card-content{
+//           font: small ;
+//            font-weight: bolder;
+//           color: black;
+//           width: 73%;
+//           input{
+//               width: 67px;
+//               font-size: large;
+//           }
+//           button{
+//               color: white;
+//               height: 35px;
+//               margin-left: 27px;
+//           }
+//       }
+//       mat-card-actions{
+//           font: small ;
+//           font-weight: bolder;
+//           color: gray;
+//       }
+//       .p-0{
+          
+//           margin-left: 273px;
+//           margin-top: -10px;
+//       }
+//       p{
+//           font-size: small;
+//           padding: 0;
+//           margin: 0;
+//       }
+//       h1{
+//           font-size: medium ;
+//           color: black;
+//           padding: 0;
+//           margin: 0;
+//           line-height: 15px;
+//       }
+//     }
+//     @media only screen and (max-width:900px) and (min-width: 800px){
+//       mat-card-title{
+//       font: x-small ;
+//       font-weight: bolder;
+//       color: black;
+//       }
+//       mat-card-subtitle{
+//       font: small ;
+//       color: gray;
+//       }
+//       .ml-4 {
+//       margin-left: 2.7em !important;
+//       }
+//       mat-card-actions{
+//       font: small ;
+//       color: gray;
+//       }
+//       mat-card-content{
+//           font: x-small ;
+//           color: black;
+//           width:85%;
+//           input{
+//             width: 50%;
+//             font-size: medium;
+//           }
+//           button{
+//               color: white;
+//               height: 35px;
+//           }
+//       }
+//       .p-0{
+//           margin-left: 96%;
+//           margin-top: -10px;
+//       }
+//       mat-expansion-panel{
+//         line-height: 20px;
+//         mat-expansion-panel-header{
+//           font-size: medium;
+//           }
+//         a{
+//           font-size: small;
+//         }
+//       }
+//       }
+//   @media only screen and (max-width:1024px) and (min-width: 901px){
+//     mat-card-title{
+//         font: small ;
+//         color: black;
+//         font-weight: bolder;
+//     }
+//     mat-card-subtitle{
+//         font: x-small ;
+//         color: gray;
+//     }
+//     mat-card-content{
+//         font: x-small ;
+//         font-weight: bolder;
+//         color: black;
+//         width:91%;
+//         input{
+//           width: 55%;
+//           font-size: medium;
+//         }
+//         button{
+//             color: white;
+//             height: 35px;
+//           width: 45%;
+//         }
+//     }
+//     .text-light{
+//       font-size: medium;
+//     }
+//     mat-card-actions{
+//         font: x-small ;
+//         color: gray;
+//     }
+//     mat-expansion-panel{
+//       line-height: 25px;
+//       mat-expansion-panel-header{
+//         font-size: medium;
+//         }
+//       a{
+//         font-size: small;
+//         line-height: 15px;
+//       }
+//     }
+//     h3{
+//       font-size: large;
+//       margin-left: 40px;
+    
+//     }
+//     .p-0{
+        
+//         margin-left: 100%;
+//         margin-top: -10px;
+//     }
+//     p{
+//         font-size: medium;
+//         padding: 0;
+//         margin: 0;
+//     }
+//     h1{
+//         font-size: medium ;
+//         font-weight: bolder;
+//         color: black;
+//         padding: 0;
+//         margin: 0;
+//         line-height: 15px;
+//     }
+//     }
+//     @media only screen and (max-width:1200px) and (min-width: 1024px){
+//       mat-card-title{
+//       font: medium ;
+//       color: black;
+//       font-weight: bolder;
+//       }
+//       mat-card-subtitle{
+//       font: small ;
+//       font-weight: bolder;
+//       color: gray;
+//       }
+//       mat-card-content{
+//       font: small ;
+//       font-weight: bolder;
+//       color: black;
+//       width: 85%;
+//       input{
+//           width: 38%;
+//           font-size: large;
+//       }
+//       button{
+//           color: white;
+//           height: 35px;
+//           font-size: medium;
+//       }
+//       }
+//       .text-light{
+//       font-size: large;
+//       }
+//       mat-card-actions{
+//       font: medium ;
+//       font-weight: bolder;
+//       color: gray;
+//       }
+//       mat-expansion-panel{
+//       line-height: 20px;
+//       mat-expansion-panel-header{
+      
+//       font-size: large;
+//       }
+//       a{
+//       font-size: medium;
+//       }
+//       }
+//       h3{
+//       font-size: x-large;
+//       margin-left: 40px;
+      
+//       }
+//       .p-0{
+//         margin-left: 98%;
+//       margin-top: -10px;
+//       }
+//       p{
+//       font-size: large;
+//       padding: 0;
+//       margin: 0;
+//       }
+//       h1{
+//       font-size: large ;
+//       font-weight: bolder;
+//       color: black;
+//       padding: 0;
+//       margin: 0;
+//       line-height: 15px;
+//       }
+//       }
+//       @media only screen and (max-width:1440px) and (min-width: 1200px){
+//         mat-card-title{
+//         font: medium ;
+//         color: black;
+//         font-weight: bolder;
+//         }
+//         mat-card-subtitle{
+//         font: small ;
+//         font-weight: bolder;
+//         color: gray;
+//         }
+//         mat-card-content{
+//         font: small ;
+//         font-weight: bolder;
+//         color: black;
+//         width: 71%;
+//         input{
+//           width: 38%;
+//             font-size: large;
+//         }
+//         button{
+//             color: white;
+//             height: 35px;
+//             padding-left: 42px;
+//             padding-right: 42px;
+//             font-size: medium;
+//         }
+//         }
+//         .text-light{
+//         font-size: large;
+//         }
+//         mat-card-actions{
+//         font: medium ;
+//         font-weight: bolder;
+//         color: gray;
+//         }
+//         mat-expansion-panel{
+//         line-height: 20px;
+//         mat-expansion-panel-header{
+        
+//         font-size: large;
+//         }
+//         a{
+//         font-size: medium;
+//         }
+//         }
+//         h3{
+//         font-size: x-large;
+//         margin-left: 40px;
+        
+//         }
+//         .p-0{
+//           margin-left: 99%;
+//         margin-top: -10px;
+//         }
+//         p{
+//         font-size: large;
+//         padding: 0;
+//         margin: 0;
+//         }
+//         h1{
+//         font-size: large ;
+//         font-weight: bolder;
+//         color: black;
+//         padding: 0;
+//         margin: 0;
+//         line-height: 15px;
+//         }
+//         }
+// @media only screen and (min-width: 1440px){
+//   mat-card-title{
+//       font: large ;
+//       font-weight: bolder;
+//       color: black;
+//   }
+//   mat-card-subtitle{
+//       font: medium ;
+//       font-weight: bolder;
+//       color: gray;
+//   }
+//   mat-card-content{
+//     font: medium;
+//     font-weight: bolder;
+//     color: black;
+//     width: 80%;
+//     input{
+//       width: 41%;
+//       font-size: medium;
+//     }
+//     button{
+//         color: white;
+//         height: 35px;
+//         padding-left: 30px;
+//         padding-right: 32px;
+//     }
+// }
+// .logo{
+//   margin-left: -7%;
+// }
+//   mat-card-actions{
+//       font: medium ;
+//       font-weight: bolder;
+//       color: gray;
+//   }
+//   .p-0{
+      
+//       margin-left: 99%;
+//       margin-top: -10px;
+//   }
+//   p{
+//       font-size: medium;
+//       padding: 0;
+//       margin: 0;
+//   }
+//   h1{
+//       font-size: large;
+//       font-weight: bolder;
+//       color: black;
+//       padding: 0;
+//       margin: 0;
+//       line-height: 15px;
+//   }
+// }
+
+// @media only screen and (min-width: 2560px){
+//   .card{
+//       width: 470px;
+//   }
+//   mat-card-title{
+//       font: x-large ;
+//       font-weight: bolder;
+//       color: black;
+//   }
+//   mat-card-subtitle{
+//       font: large ;
+//       font-weight: bolder;
+//       color: gray;
+//   }
+//   mat-card-content{
+//       font: large ;
+//       font-weight: bolder;
+//       color: black;
+//       width: 78%;
+//       input{
+//           width: 130px;
+//           font-size: x-large;
+//       }
+//       button{
+//         color: white;
+//         height: 50px;
+//         width: 53%;
+//         font-size: x-large;
+//       }
+//   }
+//   mat-card-actions{
+//       font: large ;
+//       font-weight: bolder;
+//       color: gray;
+//   }
+//   .p-0{
+      
+//       margin-left: 435px;
+//       margin-top: -10px;
+//   }
+//   p{
+//       font-size: large;
+//       padding: 0;
+//       margin: 0;
+//   }
+//   h1{
+//       font-size: x-large;
+//       font-weight: bolder;
+//       color: black;
+//       padding: 0;
+//       margin: 0;
+//       line-height: 15px;
+//   }
+
+// }
+.example-extra-box {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: visible;
+  }

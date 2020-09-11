@@ -1,0 +1,108 @@
+
+<app-header-main></app-header-main>
+<div class=" main_content mt-4 row" style="background-color:whitesmoke;top:10%">
+  <div class="col-md-12">
+    <div class="col-md-4">
+      <h4 class="text-black text-align-left p-2 mt-0">{{storeName}}</h4>
+      <h5 class="text-black text-align-left mt-0">{{price}}</h5>
+      <hr>
+  <h5 class="text-black text-align-left mt-0"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>{{address}}</h5>
+      <hr>
+    <h5 class="text-black text-align-left mt-0">{{opentime}} </h5>
+      <div class="button1 row p-0 m-0">
+        <button bg-white mat-flat-button class="button1 m-2 mb-2">Party Section</button>
+        <button bg-white mat-flat-button class="button1 m-2 mb-2">Parking</button>
+        <button bg-white mat-flat-button class="button1 m-2 mb-2">Dance Floor</button>
+      </div>
+      <br>
+    </div>
+    <div class="col-md-2">
+      <a routerLink="/booktable"> <button class="booktable text-left" mat-flat-button
+          class="m-0 mb-2 rounded-pill px-5 h-40 ">Book Table </button></a>
+    </div>
+    <div class="col-md-3">
+      <a href="/offer">
+      <img class="photo mt-2 " src="../../../assets/images/pub/Silent_Disco_in_Bielefeld.png">
+      </a>
+      <br>
+    </div>
+    <div class="col-md-3">
+      <a href="/offer">
+      <img class="photo mt-2" src="../../../assets/images/merchantimages/lily_banse__YHSwy6uqvk_unsplas.png">
+      </a>
+      <br>
+    </div>
+  </div>
+</div>
+<div class="row col-lg-12 m-0 p-0">
+  <div class="main col-md-8 p-0" style="margin-top: 0%; background-color:whitesmoke;">
+    <mat-card style="width:100% ">
+      <mat-toolbar>
+      </mat-toolbar>
+      <div class="class">
+        <div class="col-lg-12 p-2 m-">
+          <div class="h-40 w-50">
+            <a href="/#booktablemainpage">
+              <div class="container-fluid" style="margin-left: 55%;">
+                <img src="../../../assets/images/hotelbook.jpg" alt="" class="w-100 h-100 pic1">
+                <div class=" content text-center w-100">
+                  <h4 class="text-center p-4 m-2">Congratulations You Have Booked <br> Seat For :
+                    {{this.noofguest}} Reference Id:
+                    <br> Time :  {{this.day}}</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a routerLink="/offer"><button mat-flat-button
+            class="done m-0 mb-2 w-90 rounded-pill px-5 h-40">Done</button></a>
+      </div>
+    </mat-card>
+  </div>
+  <div class="submain ml-auto col-md-4" style=" margin-top:0% ;">
+    <mat-card style="width:100% ">
+      <div class="heading container-fluid w-100">
+        <div class="subheading container-fluid w-100">
+          <h3 class="text-black mt-2 p-2">Kindred</h3>
+        </div>
+        <div class="subheading">
+          <a routerLink="/user/resturants">
+          <h5 class="ml-auto text-black p-2">View All</h5>
+          </a>
+        </div>
+      </div>
+      <div style="display:flex;">
+        <div class="container-fluid w-100 m-2" style="flex:1;">
+          <a routerLink="/offer">
+          <img src="../../../assets/images/hotelbook.jpg" alt="" class="w-100 h-100 pic1">
+          <div class="content text-center w-100">
+            <h5 class="text-center text-white m-4">Puppy Bar <br> HSR Layout
+            </h5>
+          </div>
+          </a>
+        </div>
+        <div class="container-fluid w-100 p-0 m-2" style="flex:1;">
+          <a routerLink="/offer">
+          <img src="../../../assets/images/hotelbook.jpg" alt="" class="w-100 h-100 pic1">
+          <div class=" content text-center w-100">
+            <h5 class="text-center text-white m-4">Marries Bar <br> HSR Layout
+            </h5>
+          </div>
+          </a>
+        </div>
+      </div>
+      <div style="display:flex;">
+        <div class="container-fluid w-100 p-2" style="flex:1;">
+          <a routerLink="/offer">
+          <img src="../../../assets/images/bigsale.jpg" alt="" class="w-100 h-100 pic1">
+          </a>
+        </div>
+        <div class="container-fluid w-100 p-2" style="flex:1;">
+          <a routerLink="/offer">
+          <img src="../../../assets/images/bigsale.jpg" alt="" class="w-100 h-100 pic1">
+          </a>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+</div>

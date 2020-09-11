@@ -1,0 +1,101 @@
+.col-md-12{
+    display:flex;
+}
+.col-md-3{
+    flex:1;
+}
+.mat-icon{
+display:flex;
+}
+//----------------------------------//
+.main{
+    display:flex;
+    margin-top: 89px;
+    width: 320px;
+}
+.img1{
+    display:flex;
+}
+
+.rounded-pill{
+    background-color:#ff8510;
+    color:white;
+    }
+    .img2{
+        border-radius:50%;
+        height:10%;
+        width:8%;
+    }
+    .clr{
+        background-color:red;
+        position:absolute;
+        margin-top:-187px;
+    }
+
+
+
+    .container {
+        font-size: 14px;
+    line-height: 18px;
+    height: 52px;
+        overflow: hidden;
+      }
+      
+      .show {
+        overflow: visible;
+        height: auto;
+      }
+      .video{
+        width:331px;
+        margin-left:-37px;
+        padding:36px;
+        margin-top: -20px;
+        }
+        .video1{
+            width:331px;
+            margin-left:-37px;
+            padding:36px;
+            margin-top: -20px;
+            }
+      /*-----------laptop/Desktop-----------------------*/
+@media(min-width:1024px){
+}
+/*-------------tablet/Ipad----------------------*/
+@media(min-width:769px) and (max-width:1023px){}
+/*--------------mobile----------------------*/
+@media(min-width:768px){
+.mat-card{
+    display: flex;
+    margin-top: 89px;
+    width: 320px;
+}
+video{
+    width:331px;
+            margin-left:-37px;
+            padding:36px;
+            margin-top: -20px;
+}
+}
+ @media(max-width:468px){
+     .video{
+         width: 455px;
+     }
+     .videoh5{
+        margin-left: 26px;
+             }
+             .videoicon{
+        margin-left: 380px;
+             }
+        
+     .video1{
+        width: 455px;
+    }
+    .text-white{
+margin-top: -256px;
+    }
+    
+.mat-card{
+    width: 392px;
+}
+   
+ }

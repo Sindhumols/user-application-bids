@@ -1,0 +1,125 @@
+
+ <app-header-main></app-header-main>
+ <div class=" main_content mt-4 row" style="background-color:whitesmoke;top:10%">
+     <div class="col-md-12">
+         <div class="col-md-4">
+            <h4 class="text-black text-align-left p-2 mt-0">{{storeName}}</h4>
+            <h5 class="text-black text-align-left mt-0">{{price}}</h5>
+            <hr>
+        <h5 class="text-black text-align-left mt-0"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>{{address}}</h5>
+            <hr>
+          <h5 class="text-black text-align-left mt-0">{{opentime}} </h5>
+             <div class="button1 row p-0 m-0">
+                 <button bg-white mat-flat-button class="button1 m-2 mb-2">Party Section</button>
+                 <button bg-white mat-flat-button class="button1 m-2 mb-2">Parking</button>
+                 <button bg-white mat-flat-button class="button1 m-2 mb-2">Dance Floor</button>
+             </div>
+             <br>
+         </div>
+         <div class="col-md-4">
+             <img class="photo mt-2 " src="../../../assets/images/pub/Silent_Disco_in_Bielefeld.png">
+             <br>
+         </div>
+         <div class="col-md-4">
+             <img class="photo mt-2" src="../../../assets/images/merchantimages/lily_banse__YHSwy6uqvk_unsplas.png">
+             <br>
+         </div>
+     </div>
+ </div>
+ <div class="row col-lg-12 m-0 p-0">
+     <div class="main col-md-8 p-0" style="margin-top: 0%; background-color:whitesmoke;">
+         <mat-card class="mat1" style="width:100% ">
+             <h4 class="text-dark text-center">Select Date & Time</h4><br>
+             <form  [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                 <mat-card class="heading" style="background-color:#6D0C2E;padding:6px;height:12%;">
+                     <mat-datepicker-toggle class="date1" matSuffix [for]="picker2"></mat-datepicker-toggle>
+                     <input [matDatepicker]="picker2" placeholder="mm/dd/yy"  formControlName="date" 
+                        matInput>
+                     <mat-datepicker #picker2></mat-datepicker>
+                     <input [ngxTimepicker]="picker" class="ml-auto time1" placeholder="00:00"  
+                         formControlName="day" matInput>
+                     <ngx-material-timepicker-toggle matSuffix [for]="picker"></ngx-material-timepicker-toggle>
+                     <ngx-material-timepicker #picker> </ngx-material-timepicker>
+                 </mat-card>
+                 <!-- <div class="mt-4">
+                     <mat-card class="lunch"> <span>Lunch</span>
+                         <span style="margin-left:-100%">Dinner</span></mat-card>
+                 </div> -->
+                 <div class="imag" style="display:flex">
+                    <a href="/offer">
+                     <img class="w-100 p-2" style="flex:1;position:relative;" src="../../../assets/images/dfu1.jpg">
+                    </a>
+                    <a href="/offer">
+                     <img class="w-100 ml-2 p-2" style="flex:1;position:relative;" src="../../../assets/images/popp3.jpg">
+                    </a>
+                    <a href="/offer">
+                     <img class="w-100 ml-2 p-2" style="flex:1;position:relative;" src="../../../assets/images/dfu2.jpg">
+                    </a>
+                    <a href="/offer">
+                     <img class="w-100 ml-2 p-2" style="flex:1;position:relative;" src="../../../assets/images/popp3.jpg">
+                    </a>
+                 </div>
+                 <div>
+                     <h3 class="text-dark" style="text-align:center">Select Members</h3><br>
+                     <h3 class="text-dark" style="text-align:center">Choose the number of people going</h3><br>
+                     <mat-card class="add"  [formGroup]="registerForm">
+                         <h4 class="text-dark" style="margin-left: 0%;">No Of Guest </h4>
+                         <div class="qty mt-5">
+                             <input style="border: 0;width: 2%;" type="number" min='0' class="count"  placeholder="0"
+                                 formControlName="noofguest"  matInput>
+                         </div>
+                     </mat-card>
+                     <button mat-flat-button type="submit" 
+                         class="m-0 mb-2 w-90 rounded-pill px-5 h-40 mt-2">Continue</button>
+                 </div>
+             </form>
+         </mat-card>
+     </div>
+     <div class="submain ml-auto col-md-4" style=" margin-top:0% ;">
+         <mat-card style="width:100% ">
+             <div class="heading container-fluid w-100">
+                 <div class="subheading container-fluid w-100">
+                     <h3 class="text-black mt-2 p-2">Kindred</h3>
+                 </div>
+                 <div class="subheading">
+                     <a routerLink="/user/resurants">
+                     <h5 class="ml-auto text-black p-2">View All</h5>
+                    </a>
+                 </div>
+             </div>
+             <div style="display:flex;">
+                 <div class="container-fluid w-100 m-2" style="flex:1;">
+                    <a routerLink="/offer">
+                     <img src="../../../assets/images/hotelbook.jpg" alt="" class="w-100 h-100 pic1">
+                     <div class="content text-center w-100">
+                         <h5 class="text-center text-white m-4">Puppy Bar <br> HSR Layout
+                         </h5>
+                     </div>
+                    </a>
+                 </div>
+                 <div class="container-fluid w-100 p-0 m-2" style="flex:1;">
+                    <a routerLink="/offer">
+                     <img src="../../../assets/images/hotelbook.jpg" alt="" class="w-100 h-100 pic1">
+                     <div class=" content text-center w-100">
+                         <h5 class="text-center text-white m-4">Marries Bar <br> HSR Layout
+                         </h5>
+                     </div>
+                    </a>
+                 </div>
+             </div>
+             <div style="display:flex;">
+                 <div class="container-fluid w-100 p-2" style="flex:1;">
+                    <a routerLink="/offer">
+                     <img src="../../../assets/images/bigsale.jpg" alt="" class="w-100 h-100 pic1">
+                    </a>
+                 </div>
+                 <div class="container-fluid w-100 p-2" style="flex:1;">
+                    <a routerLink="/offer">
+                     <img src="../../../assets/images/bigsale.jpg" alt="" class="w-100 h-100 pic1">
+                    </a>
+                 </div>
+             </div>
+         </mat-card>
+     </div>
+ </div>
+ <app-user-footer></app-user-footer>

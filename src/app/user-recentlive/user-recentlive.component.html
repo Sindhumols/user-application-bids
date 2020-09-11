@@ -1,0 +1,66 @@
+<div class="col-md-12" id="videos">
+  <div class="col-md-2 col-2">
+    <mat-card class="example-card mt-5 " *ngFor='let card of cards'>
+      <mat-card-header>
+        <mat-card-title class="mb-4">{{card.name}}</mat-card-title>
+        <mat-card-subtitle>{{card.sub}}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="first" style="border: 3px dashed orange;">
+          <div class="m-auto">
+            <input matInput type="text" value="{{card.code}}" #userinput style="border: none;"></div>
+          <div>
+            <button class="btn" mat-raised-button (click)="copyInputMessage(userinput)"
+              style="background-color: orange;">Copy</button>
+          </div>
+        </div>
+        <button class="rounded-circle ml-auto p-0" mat-raised-button>
+          <mat-icon aria-hidden="false" aria-label="Example home icon">keyboard_arrow_right</mat-icon>
+        </button>
+      </mat-card-content>
+      <mat-card-actions>
+        Valid till {{card.date}}
+      </mat-card-actions>
+    </mat-card>
+  </div>
+
+  <div class="col-md-10">
+    <div class="block" style="display: block;">
+      <div class="col-md-10">
+        <video class="video11 video-fluid z-depth-1" autoplay loop controls>
+          <source src="https://mdbootstrap.com/img/video/Sail-Away.mp4" type="video/mp4" />
+          <P>Indigo Xp Video001 Uploaded On 3/31/2020@2:30PM</P>
+        </video>
+        <p class="text-white clr">Live</p>
+      </div>
+      <br>
+    </div>
+    <div class="p-4 col-md-2" style="margin-top: -9%;margin-right: 0px;">
+    <owl-carousel [options]="video1Carousel" [items]="video11"
+      [carouselClasses]="['plan-slider owl-carousel owl-theme']">
+      <div class="item" *ngFor="let vid of video11">
+
+     
+
+        <!-- <a routerLink="{{vid.link}}"> -->
+
+        <div class="col-md-2 submain">
+          <h5 class="text-dark headh5">Watch Other LiveSession</h5>
+          <mat-card class="sub-mat">
+            <p class="text-white clr live">{{vid.live}}</p>
+            <video class="video-fluid z-depth-1 video" autoplay loop controls>
+              <source src={{vid.video1}} type="video/mp4" />
+            </video>
+            <br>
+            <button mat-flat-button class="btn btn-primary m-4 mb-2 w-90 rounded-pill px-5 h-40 mt-2">Watch</button>
+            <br>
+            <h5 class="text-dark">{{vid.head}}</h5>
+          </mat-card>
+        </div>
+        <!-- </a> -->
+      </div>
+    </owl-carousel>
+
+  </div>
+</div>
+</div>

@@ -1,0 +1,14 @@
+<mat-toolbar color="primary" class="mt-5">
+ FAQ's
+</mat-toolbar>
+<div class="basic-container">
+  <mat-accordion>
+  <mat-expansion-panel *ngFor="let faq of faqs">
+    <mat-expansion-panel-header>
+      {{faq.question}}
+      <mat-divider></mat-divider>
+    </mat-expansion-panel-header>
+    {{faq.answer}}
+  </mat-expansion-panel>
+</mat-accordion>
+</div>
